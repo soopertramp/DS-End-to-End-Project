@@ -19,3 +19,9 @@ The project is focused on [problem statement]. The data used in this project has
 ## Conclusion
 
 This project showcases the ability to handle real-world data and solve a problem using data science techniques. The project can be used as a reference for building similar projects in the future. Feel free to use the code and make modifications as per your requirements.
+
+## Contributed by
+
+[Pradeep](https://www.linkedin.com/in/pradeepchandra-reddy-s-c/)
+
+[Mitul](https://www.linkedin.com/in/mitul-patel2393/)
