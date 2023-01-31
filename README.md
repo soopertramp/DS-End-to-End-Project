@@ -1,2 +1,2 @@
 # DS-End-to-End-Project
-Data science end to end project
+This repo is for a Data Science End2End Project.
