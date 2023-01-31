@@ -1,2 +1,2 @@
 # DS-End-to-End-Project
-End to End Data Science Project. ds
+End to End Data Science Project. data
