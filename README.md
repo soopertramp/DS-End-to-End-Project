@@ -20,7 +20,7 @@ The project is focused on [problem statement]. The data used in this project has
 
 This project showcases the ability to handle real-world data and solve a problem using data science techniques. The project can be used as a reference for building similar projects in the future. Feel free to use the code and make modifications as per your requirements.
 
-## Contributed by
+## Created and Contributed by
 
 [Pradeep](https://www.linkedin.com/in/pradeepchandra-reddy-s-c/)
 
