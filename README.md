@@ -3,7 +3,7 @@
 <p align="left">
   <img src="https://learn.microsoft.com/en-us/azure/architecture/data-science-process/media/lifecycle/tdsp-lifecycle2.png">
 
-  Pic Credits - [Microsoft] 
+  Pic Credits - [Microsoft](https://learn.microsoft.com/en-us/azure/architecture/data-science-process/lifecycle) 
 
 ## Introduction
  
