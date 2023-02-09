@@ -3,6 +3,8 @@
 <p align="left">
   <img src="https://learn.microsoft.com/en-us/azure/architecture/data-science-process/media/lifecycle/tdsp-lifecycle2.png">
 
+  Pic Credits - [Microsoft] 
+
 ## Introduction
 
 This repository contains an end-to-end data science project that demonstrates the complete data science process from data collection to deployment. The project aims to provide insights into a real-world problem and solve it using data science techniques.
@@ -22,6 +24,8 @@ This project showcases the ability to handle real-world data and solve a problem
 
 ## Created and Contributed by
 
+[The Data Science Show](https://www.linkedin.com/in/mitul-patel2393/)
+
 [Pradeep](https://www.linkedin.com/in/pradeepchandra-reddy-s-c/)
 
-[Mitul](https://www.linkedin.com/in/mitul-patel2393/)
+[Mitul - Mentor](https://www.linkedin.com/in/mitul-patel2393/)
