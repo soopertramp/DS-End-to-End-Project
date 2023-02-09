@@ -46,7 +46,7 @@ mycursor.execute("DROP TABLE supermarket_sales")
   
 # Create a table
 
-mycursor.execute("CREATE TABLE supermarket_sales (invoice_id INT, branch CHAR, city VARCHAR(255), customer_type VARCHAR(255), gender VARCHAR(255), product_line VARCHAR(255), unit_price FLOAT, quantity INT, tax_5_percent FLOAT, total FLOAT, date DATE, time TIME, payment VARCHAR(255), cogs FLOAT, gross_margin_percentage FLOAT, gross_income FLOAT, rating FLOAT)")    
+mycursor.execute("CREATE TABLE supermarket_sales (invoice_id VARCHAR(255), branch CHAR, city VARCHAR(255), customer_type VARCHAR(255), gender VARCHAR(255), product_line VARCHAR(255), unit_price FLOAT, quantity INT, tax_5_percent FLOAT, total FLOAT, date DATE, time TIME, payment VARCHAR(255), cogs FLOAT, gross_margin_percentage FLOAT, gross_income FLOAT, rating FLOAT)")    
   
 # Insert data into a table
 
@@ -59,6 +59,17 @@ with open('supermarket_sales.csv', 'r') as file:
     # Loop through each row in the CSV file
     for row in reader:
         # Create the INSERT INTO SQL statement
-        sql = "INSERT INTO supermarket_sales (invoice_id, branch, city, customer_type, gender, product_line, unit_price, quantity, tax_5_percent, total, date, time, payment, cogs, gross_margin_percentage, gross_income, rating) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+        sql = "INSERT INTO supermarket_sales (invoice_id, branch, city, customer_type, gender, product_line, unit_price, quantity, tax_5_percent, total, date, time, payment, cogs, gross_margin_percentage, gross_income, rating) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
         # Execute the SQL statement
         mycursor.execute(sql, row)
+        
+mydb.commit()
+
+mycursor.execute("select * from supermarket_sales")
+
+myresult = mycursor.fetchall()
+
+for x in myresult:
+  print(x)
+  
+mydb.close()
