@@ -24,8 +24,8 @@ This project showcases the ability to handle real-world data and solve a problem
 
 ## Created and Contributed by
 
-[The Data Science Show](https://www.linkedin.com/in/mitul-patel2393/)
-
 [Pradeep](https://www.linkedin.com/in/pradeepchandra-reddy-s-c/)
+
+[The Data Science Show](https://www.linkedin.com/in/mitul-patel2393/)
 
 [Mitul - Mentor](https://www.linkedin.com/in/mitul-patel2393/)
