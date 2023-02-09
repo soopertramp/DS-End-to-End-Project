@@ -6,7 +6,7 @@
   Pic Credits - [Microsoft] 
 
 ## Introduction
-
+ 
 This repository contains an end-to-end data science project that demonstrates the complete data science process from data collection to deployment. The project aims to provide insights into a real-world problem and solve it using data science techniques.
 
 ## Project Description
