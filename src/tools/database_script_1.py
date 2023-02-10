@@ -3,6 +3,9 @@ from pathlib import Path
 import os
 import pandas as pd
 from dotenv import load_dotenv
+import csv
+
+#STEP 1: CONNECTION TO MYSQL
 
 mydb = mysql.connect(
   host="localhost",
@@ -12,61 +15,62 @@ mydb = mysql.connect(
 
 print(mydb)
 
+#STEP 2: CONNECTOR
+
 """ Create a cursor object : A cursor is a temporary storage area in a 
 database management system. You can use it to execute SQL statements 
 and retrieve the results. """
 
 cursor = mydb.cursor()
 
-drop_db_query = 'DROP DATABASE supermarket'
+#STEP 3: SQL QUERY
+
+drop_db_query = 'DROP DATABASE IF EXISTS supermarket'
 cursor.execute(drop_db_query)
+
+# show databases
+
+cursor.execute('SHOW DATABASES')
+databases = cursor.fetchall()
+databases
+
+for data in databases:
+  print(data)
+  
+#create database  
 
 create_db_query = 'CREATE DATABASE supermarket'
 cursor.execute(create_db_query)
 
 ## show databases
 cursor.execute('SHOW DATABASES')
-record = cursor.fetchall()
-record
+databases = cursor.fetchall()
+databases
+
+#read the data using pandas ~ convert it to function 
+
+df = pd.read_csv("data\supermarket_sales.csv")
+df
+
+#drop and create a new table
 
 cursor.execute('USE supermarket')
-cursor.execute('DROP TABLE IF EXISTS ')
+cursor.execute(f'DROP TABLE IF EXISTS {table_name}')
+cursor.execute(f"CREATE TABLE {table_name} ({col_type})")
+               
+df.columns
 
-# ## drop and create new table
-# cursor.execute('USE groceries')
-# cursor.execute('DROP TABLE IF EXISTS sales;')
-# cursor.execute('CREATE TABLE sales (id VARCHAR(255), timestamp VARCHAR(255), temperature DECIMAL(6,2))')
+#insert data into table
 
-# ## insert data into table
-# sql = "INSERT INTO sales (id, timestamp, temperature) VALUES (%s, %s, %s)"
-# val = ("d1ca1ef8-0eac-42fc-af80-97106efc7b13", "2022-03-07 15:55:20", 2.96)
-# cursor.execute(sql, val)
-# conn.commit()
-# print(cursor.rowcount, "record inserted.")
+for i,row in df.iterrows():
+  #here %S means string values 
+  sql = f"INSERT INTO {table_name} (invoice_id, branch, city, customer_type, gender, product_line, unit_price, quantity, tax_5_percent, total, date, time, payment, cogs, gross_margin_percentage, gross_income, rating) VALUES ({values})"
+  cursor.execute(sql, tuple(row))
+  print("Record inserted")
+  # the connection is not auto committed by default, so we must commit to save our changes
+  mydb.commit()
+  
+# parameters
 
-# def get_data(path: str) -> pd.DataFrame:
-#     """_summary_
-
-#     Args:
-#         path (str): _description_
-
-#     Returns:
-#         pd.DataFrame: _description_
-#     """
-#     df = pd.read_csv(path)
-#     df.drop(columns=['Unnamed: 0'], inplace=True, axis=1, errors='ignore')
-#     return df # give me modified data back so that it can assigned to a variable
-
-# def create_db_schema(data: pd.DataFrame) -> Tuple[str, str]:
-#     types = []
-#     for i in df.dtypes:
-#         if i == 'object':
-#             types.append('VARCHAR(255)')
-#         elif i == 'float64':
-#             types.append('DECIMAL(6,2)')
-#     col_type = list(zip(df.columns.values, types))
-#     col_type = tuple([" ".join(i) for i in col_type])
-#     col_type = ", ".join(col_type)
-#     values = ', '.join(['%s' for _ in range(len(df.columns))])
-#     return col_type, values
-# create_db_schema(df)
+col_type, values = create_db_schema(df)
+table_name = 'revenue'
