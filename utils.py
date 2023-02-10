@@ -32,6 +32,18 @@ df.columns
 df.dtypes
 
 def create_db_schema(data: pd.DataFrame) -> Tuple[str, str]:
+    
+    """
+    Given a pandas DataFrame `data`, this function returns a tuple of two strings representing 
+    the SQL schema and placeholder values for a table in a relational database.
+
+    Args:
+    - data (pd.DataFrame): The input pandas DataFrame.
+
+    Returns:
+    - Tuple[str, str]: A tuple of two strings, the first one represents the SQL schema, and the 
+    second one represents the placeholder values for the table. """
+    
     types = []
     for i in df.dtypes:
         if i == 'object':
@@ -45,8 +57,3 @@ def create_db_schema(data: pd.DataFrame) -> Tuple[str, str]:
     col_type = ", ".join(col_type)
     values = ', '.join(['%s' for _ in range(len(df.columns))])
     return col_type, values
-
-
-
-
-
