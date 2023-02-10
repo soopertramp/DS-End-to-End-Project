@@ -73,4 +73,4 @@ for i,row in df.iterrows():
 # parameters
 
 col_type, values = create_db_schema(df)
-table_name = 'revenue'
+table_name = 'customers'
