@@ -28,4 +28,4 @@ This project showcases the ability to handle real-world data and solve a problem
 
 [The Data Science Show](https://www.linkedin.com/in/mitul-patel2393/)
 
-[Mitul - Mentor](https://www.linkedin.com/in/mitul-patel2393/)
+[Mitul Patel Msc - Mentor](https://www.linkedin.com/in/mitul-patel2393/)
