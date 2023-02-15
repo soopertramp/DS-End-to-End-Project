@@ -4,6 +4,8 @@ import os
 import pandas as pd
 from dotenv import load_dotenv
 import csv
+from utils import get_data
+from utils import create_db_schema
 
 #STEP 1: CONNECTION TO MYSQL
 
@@ -34,8 +36,8 @@ cursor.execute('SHOW DATABASES')
 databases = cursor.fetchall()
 databases
 
-for data in databases:
-  print(data)
+# for data in databases:
+#   print(data)
   
 #create database  
 
@@ -47,18 +49,22 @@ cursor.execute('SHOW DATABASES')
 databases = cursor.fetchall()
 databases
 
-#read the data using pandas ~ convert it to function 
+#read the data using pandas 
 
-df = pd.read_csv("data\supermarket_sales.csv")
+df = get_data("data\supermarket_sales.csv")
 df
+               
+df.columns
+df.info()
 
 #drop and create a new table
+
+col_type, values = create_db_schema(df)
+table_name = 'customers'
 
 cursor.execute('USE supermarket')
 cursor.execute(f'DROP TABLE IF EXISTS {table_name}')
 cursor.execute(f"CREATE TABLE {table_name} ({col_type})")
-               
-df.columns
 
 #insert data into table
 
@@ -70,7 +76,13 @@ for i,row in df.iterrows():
   # the connection is not auto committed by default, so we must commit to save our changes
   mydb.commit()
   
-# parameters
+#random parameters check
 
 col_type, values = create_db_schema(df)
-table_name = 'customers'
+table_name = 'sales'
+
+cursor.execute('USE supermarket')
+cursor.execute(f'DROP TABLE IF EXISTS {table_name}')
+cursor.execute(f"CREATE TABLE {table_name} ({col_type})")
+
+#working
