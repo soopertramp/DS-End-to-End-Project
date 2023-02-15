@@ -84,5 +84,3 @@ table_name = 'sales'
 cursor.execute('USE supermarket')
 cursor.execute(f'DROP TABLE IF EXISTS {table_name}')
 cursor.execute(f"CREATE TABLE {table_name} ({col_type})")
-
-#working
