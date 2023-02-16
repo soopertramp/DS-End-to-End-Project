@@ -59,7 +59,7 @@ df.info()
 
 #drop and create a new table
 
-col_type, values = create_db_schema(df)
+col_type, values = create_db_schema(df) #from utils
 table_name = 'customers'
 
 cursor.execute('USE supermarket')
@@ -72,9 +72,10 @@ for i,row in df.iterrows():
   #here %S means string values 
   sql = f"INSERT INTO {table_name} (invoice_id, branch, city, customer_type, gender, product_line, unit_price, quantity, tax_5_percent, total, date, time, payment, cogs, gross_margin_percentage, gross_income, rating) VALUES ({values})"
   cursor.execute(sql, tuple(row))
-  print("Record inserted")
   # the connection is not auto committed by default, so we must commit to save our changes
   mydb.commit()
+  
+print(cursor.rowcount "Record inserted")
   
 #random parameters check
 
