@@ -1,11 +1,12 @@
-import mysql.connector as mysql
-from pathlib import Path 
+import csv
 import os
+from pathlib import Path
+
+import mysql.connector as mysql
 import pandas as pd
 from dotenv import load_dotenv
-import csv
-from utils import get_data
-from utils import create_db_schema
+
+from utils import create_db_schema, get_data
 
 #STEP 1: CONNECTION TO MYSQL
 

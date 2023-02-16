@@ -1,6 +1,7 @@
-import pandas as pd
 from typing import List, Tuple, Union
+
 import mysql.connector as mysql
+import pandas as pd
 
 #function that connects to MySQL and creates a cursor object
 
