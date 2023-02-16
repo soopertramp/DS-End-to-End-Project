@@ -37,7 +37,25 @@ def connect_to_mysql(host, user, password):
     except Exception as e:
         print("Error: ", e)
 
-#functio that read data using pandas
+#function that creats database
+        
+def create_database(cursor, database_name):
+    # drop database if exists
+    drop_db_query = f'DROP DATABASE IF EXISTS {database_name}'
+    cursor.execute(drop_db_query)
+
+    # create database
+    create_db_query = f'CREATE DATABASE {database_name}'
+    cursor.execute(create_db_query)
+
+    # show databases
+    cursor.execute('SHOW DATABASES')
+    databases = cursor.fetchall()
+    print("List of databases:")
+    for db in databases:
+        print(db[0])
+
+#function that read data using pandas
 
 def get_data(path: str) -> pd.DataFrame:
     
