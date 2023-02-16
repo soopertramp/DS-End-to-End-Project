@@ -1,88 +1,48 @@
-import csv
-import os
-from pathlib import Path
-
+# import necessary libraries
 import mysql.connector as mysql
+from pathlib import Path 
+import os
 import pandas as pd
 from dotenv import load_dotenv
+import csv
+from utils import connect_to_mysql, get_data, create_database, create_table, create_db_schema
 
-from utils import create_db_schema, get_data
+# Step 1: Connect to MySQL server
+# define host, user, password, and database name
+host = 'localhost'
+user = 'root'
+password = 'password'
+database_name = 'supermarket'
 
-#STEP 1: CONNECTION TO MYSQL
+# call connect_to_mysql() function to establish connection
+mydb, cursor = connect_to_mysql(host, user, password)
 
-mydb = mysql.connect(
-  host="localhost",
-  user="root",
-  password="password"
-)
+# Step 2: Create a new database
+# call create_database() function to create a new database with the given name
+create_database(cursor, database_name)
 
-print(mydb)
-
-#STEP 2: CONNECTOR
-
-""" Create a cursor object : A cursor is a temporary storage area in a 
-database management system. You can use it to execute SQL statements 
-and retrieve the results. """
-
-cursor = mydb.cursor()
-
-#STEP 3: SQL QUERY
-
-drop_db_query = 'DROP DATABASE IF EXISTS supermarket'
-cursor.execute(drop_db_query)
-
-# show databases
-
-cursor.execute('SHOW DATABASES')
-databases = cursor.fetchall()
-databases
-
-# for data in databases:
-#   print(data)
-  
-#create database  
-
-create_db_query = 'CREATE DATABASE supermarket'
-cursor.execute(create_db_query)
-
-## show databases
-cursor.execute('SHOW DATABASES')
-databases = cursor.fetchall()
-databases
-
-#read the data using pandas 
-
+# Step 3: Read data from a CSV file using pandas
+# load the CSV file into a dataframe using pandas
 df = get_data("data\supermarket_sales.csv")
 df
-               
-df.columns
-df.info()
 
-#drop and create a new table
-
-col_type, values = create_db_schema(df) #from utils
-table_name = 'customers'
-
-cursor.execute('USE supermarket')
-cursor.execute(f'DROP TABLE IF EXISTS {table_name}')
-cursor.execute(f"CREATE TABLE {table_name} ({col_type})")
-
-#insert data into table
-
-for i,row in df.iterrows():
-  #here %S means string values 
-  sql = f"INSERT INTO {table_name} (invoice_id, branch, city, customer_type, gender, product_line, unit_price, quantity, tax_5_percent, total, date, time, payment, cogs, gross_margin_percentage, gross_income, rating) VALUES ({values})"
-  cursor.execute(sql, tuple(row))
-  # the connection is not auto committed by default, so we must commit to save our changes
-  mydb.commit()
-  
-print(cursor.rowcount "Record inserted")
-  
-#random parameters check
-
+# Step 4: Create table schema
+# call create_db_schema() function to create column names and types for the table schema
 col_type, values = create_db_schema(df)
-table_name = 'sales'
 
-cursor.execute('USE supermarket')
-cursor.execute(f'DROP TABLE IF EXISTS {table_name}')
-cursor.execute(f"CREATE TABLE {table_name} ({col_type})")
+# Step 5: Create a new table
+# call create_table() function to create a new table with the given schema in the database
+create_table(database_name, 'customers', col_type, cursor)
+
+# Step 6: Insert data into the table
+# iterate over each row in the dataframe and insert it into the table using a for loop
+for i,row in df.iterrows():
+  # create an SQL query string for each row using the values list and the table name
+  # and execute it using the cursor object 
+  sql = f"INSERT INTO {table_name} VALUES ({values})"
+  cursor.execute(sql, tuple(row))
+  # commit the changes to the database
+  mydb.commit()
+
+# print the number of records inserted into the table  
+print(cursor.rowcount, "Record inserted")

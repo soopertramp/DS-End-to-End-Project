@@ -1,11 +1,10 @@
-from typing import List, Tuple, Union
-
-import mysql.connector as mysql
+# import necessary libraries
 import pandas as pd
+from typing import List, Tuple, Union
+import mysql.connector as mysql
 
-#function that connects to MySQL and creates a cursor object
-
-def connect_to_mysql(host, user, password):
+# Define a function that connects to a MySQL server and creates a cursor object.
+def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connection.MySQLConnection, mysql.cursor.MySQLCursor]:
     """
     Connects to a MySQL server with the given hostname, username, and password.
 
@@ -38,51 +37,75 @@ def connect_to_mysql(host, user, password):
     except Exception as e:
         print("Error: ", e)
 
-#function that creats database
-        
-def create_database(cursor, database_name):
-    # drop database if exists
+# Define a function that creates a new MySQL database.        
+def create_database(cursor: mysql.cursor.MySQLCursor, database_name: str) -> None:
+    """
+    Creates a new MySQL database with the given name.
+
+    Args:
+        cursor (mysql.cursor.MySQLCursor): The cursor object to use to execute SQL statements.
+        database_name (str): The name of the new database to create.
+
+    Returns:
+        None
+    """
+    # Drop the database if it already exists
     drop_db_query = f'DROP DATABASE IF EXISTS {database_name}'
     cursor.execute(drop_db_query)
 
-    # create database
+    # Create the database
     create_db_query = f'CREATE DATABASE {database_name}'
     cursor.execute(create_db_query)
 
-    # show databases
+    # Show all databases on the MySQL server
     cursor.execute('SHOW DATABASES')
     databases = cursor.fetchall()
     print("List of databases:")
     for db in databases:
         print(db[0])
 
-#function that read data using pandas
+# Define a function that creates a new MySQL table.        
+def create_table(database_name: str, table_name: str, col_type: str, cursor: mysql.cursor.MySQLCursor) -> None:
+    """
+    Creates a new MySQL table with the given name, using the specified column names and data types.
 
+    Args:
+        database_name (str): The name of the database in which to create the new table.
+        table_name (str): The name of the new table to create.
+        col_type (str): A string specifying the column names and data types for the new table.
+        cursor (mysql.cursor.MySQLCursor): The cursor object to use to execute SQL statements.
+
+    Returns:
+        None
+    """
+    # Connect to the MySQL server and select the specified database
+    cursor.execute(f'USE {database_name}')
+
+    # Drop the table if it already exists
+    cursor.execute(f'DROP TABLE IF EXISTS {table_name}')
+
+    # Create a new table with the specified columns and data types
+    cursor.execute(f"CREATE TABLE {table_name} ({col_type})")
+
+# Define a function that loads data from a CSV file into a pandas DataFrame.
 def get_data(path: str) -> pd.DataFrame:
-    
     """
-    Load data from a CSV file into a pandas DataFrame.
+    Loads data from a CSV file into a pandas DataFrame.
 
-    Parameters
-    ----------
-    path : str
-        The file path of the CSV file to be loaded.
+    Args:
+        path (str): The path to the CSV file to be loaded.
 
-    Returns
-    -------
-    pd.DataFrame
-        The loaded data in a pandas DataFrame.
-
+    Returns:
+        pd.DataFrame: A pandas DataFrame
     """
-    
+    # Load data from CSV file
     df = pd.read_csv(path)
+    # Drop the 'Unnamed : 0' column, if it exists
     df.drop(columns = ['Unnamed : 0'], inplace = True, errors = 'ignore')
     return df 
 
-#function that returns a tuple of two strings representing the SQL schema
-
+# Define a function that creates sql schema and values for a table
 def create_db_schema(data: pd.DataFrame) -> Tuple[str, str]:
-    
     """
     Given a pandas DataFrame `data`, this function returns a tuple of two strings representing 
     the SQL schema and placeholder values for a table in a relational database.
@@ -93,7 +116,7 @@ def create_db_schema(data: pd.DataFrame) -> Tuple[str, str]:
     Returns:
     - Tuple[str, str]: A tuple of two strings, the first one represents the SQL schema, and the 
     second one represents the placeholder values for the table. """
-    
+    # Determine the SQL data type for each column in the DataFrame
     types = []
     for i in df.dtypes:
         if i == 'object':
