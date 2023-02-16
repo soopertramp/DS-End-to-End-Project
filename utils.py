@@ -1,5 +1,6 @@
 import pandas as pd
 from typing import List, Tuple, Union
+import mysql.connector as mysql
 
 #function that connects to MySQL and creates a cursor object
 
@@ -21,7 +22,7 @@ def connect_to_mysql(host, user, password):
     """
     try:
         # connect to MySQL
-        mydb = mysql.connector.connect(
+        mydb = mysql.connect(
             host = host,
             user = user,
             password = password
