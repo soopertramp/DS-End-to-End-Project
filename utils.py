@@ -1,7 +1,42 @@
 import pandas as pd
 from typing import List, Tuple, Union
 
-#read data using pandas
+#function that connects to MySQL and creates a cursor object
+
+def connect_to_mysql(host, user, password):
+    """
+    Connects to a MySQL server with the given hostname, username, and password.
+
+    Args:
+        host (str): The hostname of the MySQL server to connect to.
+        user (str): The username to use when connecting to the server.
+        password (str): The password to use when connecting to the server.
+
+    Returns:
+        A tuple containing two objects: the connection to the MySQL server and a cursor object.
+        The cursor can be used to execute SQL statements and retrieve results from the server.
+
+    Raises:
+        Exception: If an error occurs while connecting to the MySQL server.
+    """
+    try:
+        # connect to MySQL
+        mydb = mysql.connector.connect(
+            host = host,
+            user = user,
+            password = password
+        )
+        print("Connected to MySQL successfully!")
+        
+        # create a cursor
+        cursor = mydb.cursor()
+        print("Cursor object created successfully!")
+        
+        return mydb, cursor
+    except Exception as e:
+        print("Error: ", e)
+
+#functio that read data using pandas
 
 def get_data(path: str) -> pd.DataFrame:
     
@@ -22,14 +57,9 @@ def get_data(path: str) -> pd.DataFrame:
     
     df = pd.read_csv(path)
     df.drop(columns = ['Unnamed : 0'], inplace = True, errors = 'ignore')
-    return df #return gives modified data back so that it can assigned to a variable where as print cannot be assigned
+    return df 
 
-df = get_data("data\\supermarket_sales.csv")
-df
-
-df.columns
-
-df.dtypes
+#function that returns a tuple of two strings representing the SQL schema
 
 def create_db_schema(data: pd.DataFrame) -> Tuple[str, str]:
     
@@ -52,8 +82,13 @@ def create_db_schema(data: pd.DataFrame) -> Tuple[str, str]:
             types.append('FLOAT')
         elif i == 'int64':
             types.append('INT')
+            
+    # Combine column names and data types into a string of SQL schema
     col_type = list(zip(df.columns.values, types))
     col_type = tuple([" ".join(i) for i in col_type])
     col_type = ", ".join(col_type)
+    
+    # Create a string of placeholder values for SQL queries
     values = ', '.join(['%s' for _ in range(len(df.columns))])
+    
     return col_type, values
