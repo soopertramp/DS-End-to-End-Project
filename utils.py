@@ -63,7 +63,7 @@ def create_database(cursor: str, database_name: str) -> List:
     return databases
 
 # Define a function that creates a new MySQL table.        
-def create_table(database_name: str, table_name: str, col_type: str, cursor: mysql.cursor.MySQLCursor) -> None:
+def create_table(database_name: str, table_name: str, col_type: str, cursor: str):
     """
     Creates a new MySQL table with the given name, using the specified column names and data types.
 
