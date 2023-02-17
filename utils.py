@@ -32,10 +32,10 @@ def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connect
         # create a cursor
         cursor = mydb.cursor()
         print("Cursor object created successfully!")
-        
-        return mydb, cursor
     except Exception as e:
-        print("Error: ", e)
+        print("Error: ", e)        
+        return mydb, cursor
+
 
 # Define a function that creates a new MySQL database.        
 def create_database(cursor: cursor, database_name: str) -> None:
