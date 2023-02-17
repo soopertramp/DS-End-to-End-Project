@@ -38,12 +38,12 @@ def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connect
         print("Error: ", e)
 
 # Define a function that creates a new MySQL database.        
-def create_database(cursor: mysql.cursor.MySQLCursor, database_name: str) -> None:
+def create_database(cursor: cursor, database_name: str) -> None:
     """
     Creates a new MySQL database with the given name.
 
     Args:
-        cursor (mysql.cursor.MySQLCursor): The cursor object to use to execute SQL statements.
+        cursor (cursor): The cursor object to use to execute SQL statements.
         database_name (str): The name of the new database to create.
 
     Returns:
