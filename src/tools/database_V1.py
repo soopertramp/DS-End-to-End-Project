@@ -35,7 +35,9 @@ col_type, values = create_db_schema(df)
 
 # Step 5: Create a new table
 # call create_table() function to create a new table with the given schema in the database
-create_table(database_name, 'customers', col_type, cursor)
+
+table_name = "customers"
+create_table(database_name, table_name, col_type, cursor)
 
 # Step 6: Insert data into the table
 # iterate over each row in the dataframe and insert it into the table using a for loop

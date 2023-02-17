@@ -103,7 +103,7 @@ def get_data(path: str) -> pd.DataFrame:
     return df 
 
 # Define a function that creates sql schema and values for a table
-def create_db_schema(data: pd.DataFrame) -> Tuple[str, str]:
+def create_db_schema(df: pd.DataFrame) -> Tuple[str, str]:
     """
     Given a pandas DataFrame `data`, this function returns a tuple of two strings representing 
     the SQL schema and placeholder values for a table in a relational database.
