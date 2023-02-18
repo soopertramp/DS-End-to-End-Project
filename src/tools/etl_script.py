@@ -87,21 +87,23 @@ datetime_col = pd.to_datetime(df['date'] + ' ' + df['time'])
 # add the new datetime column to the dataframe
 df['date_time'] = datetime_col
 
-df = df.drop(['date', 'time', 'datetime'], axis=1)
+df = df.drop(['date', 'time'], axis=1)
 
 #checking the data types
 df.dtypes
-
-#total amount of sales per day
-sales_per_day = df.groupby(['date','time'])['total'].sum().reset_index(name='total_sales_per_day')
-sales_per_day
 
 # extract the date and time components
 df['date'] = df['date_time'].dt.date
 df['time'] = df['date_time'].dt.time
 
-df = df.drop(['date_time'], axis=1)
+df.set_index('date','time', inplace=True)
 
-# create the time series graph
-sales_per_day.plot(kind='line', x='date', y='time', title='Total Sales Overtime', xlabel='Date', ylabel='time')
+# df = df.drop(['date_time'], axis=1)
+# df.columns
+
+#total amount of sales per day
+sales_per_day = df.groupby(['date'])['total'].sum()
+sales_per_day
+
+sales_per_day.plot(kind='line', x='date', y='total', title='Total Sales Per Day', xlabel='Date', ylabel='Total Sales Per Day ($)')
 plt.show()
