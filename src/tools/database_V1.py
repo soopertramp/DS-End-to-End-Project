@@ -30,7 +30,6 @@ create_database(cursor, database_name)
 # Step 3: Read data from a CSV file using pandas
 # load the CSV file into a dataframe using pandas
 df = get_data(data)
-df.head()
 
 # Step 4: Create table schema
 # call create_db_schema() function to create column names and types for the table schema
