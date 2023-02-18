@@ -1,5 +1,6 @@
 #import necessary libraries 
 import pandas as pd
+import matplotlib.pyplot as plt
 
 #reading the data
 df = pd.read_csv('data/supermarket_sales.csv')
@@ -45,6 +46,9 @@ df['product_line'].unique()
 top5_categories = df.groupby(['product_line'])['total'].mean().reset_index(name='total_sales').sort_values(by = 'total_sales', ascending = False)
 top5_categories
 
+top5_categories.plot(kind='bar', x='product_line', y='total_sales', title='Product v Sales', xlabel='Products', ylabel='Total Sales ($)')
+plt.show()
+
 #city v branch v product_line and calculates the mean total sales for each group
 branch = df.groupby(['city','branch','product_line',])['total'].mean().sort_values(ascending = False)
 branch
@@ -53,17 +57,29 @@ branch
 city = df.groupby(['city'])['total'].mean().sort_values(ascending = False)
 city
 
+city.plot(kind='bar', x='city', y='total', title='City v Sales', xlabel='City', ylabel='Total Sales ($)')
+plt.show()
+
 #Which payment method is the most frequent
 payment = df.groupby(['payment'])['invoice_id'].count().reset_index(name='invoice_count').sort_values(by='invoice_count', ascending=False)
 payment
 
-#Who are the most frequent buyers within the store
+payment.plot(kind='bar', x='payment', y='invoice_count', title='Payment v Invoice Count', xlabel='Payment Type', ylabel='No of Payments')
+plt.show()
+
+#Which type of customers are the most frequent buyers within the store
 customers = df.groupby(['customer_type'])['total'].sum().reset_index(name='total_sales')
 customers
 
-#whcih gender buys the most
+customers.plot(kind='bar', x='customer_type', y='total_sales', title='Customer Type v Total Sales', xlabel='Customer Type', ylabel='Total Sales')
+plt.show()
+
+#which gender buys the most
 gender = df.groupby(['gender'])['total'].sum().reset_index(name='total_sales')
 gender
+
+gender.plot(kind='bar', x='gender', y='total_sales', title='Gender v Total Sales', xlabel='Gender', ylabel='Total Sales')
+plt.show()
 
 #converting date from object to date type datatype
 df['date'] = pd.to_datetime(df['date'])
