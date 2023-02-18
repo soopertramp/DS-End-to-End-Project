@@ -10,13 +10,16 @@ from dotenv import load_dotenv
 from utils import (connect_to_mysql, create_database, create_db_schema,
                    create_table, get_data)
 
-# Step 1: Connect to MySQL server
-# define host, user, password, and database name
+# define variables
 host = 'localhost'
 user = 'root'
 password = 'password'
 database_name = 'supermarket'
+data = Path(os.path.join("data","supermarket_sales.csv"))
+table_name = "customers"
 
+
+# Step 1: Connect to MySQL server
 # call connect_to_mysql() function to establish connection
 mydb, cursor = connect_to_mysql(host, user, password)
 
@@ -26,8 +29,8 @@ create_database(cursor, database_name)
 
 # Step 3: Read data from a CSV file using pandas
 # load the CSV file into a dataframe using pandas
-df = get_data("data\supermarket_sales.csv")
-df
+df = get_data(data)
+df.head()
 
 # Step 4: Create table schema
 # call create_db_schema() function to create column names and types for the table schema
@@ -35,8 +38,6 @@ col_type, values = create_db_schema(df)
 
 # Step 5: Create a new table
 # call create_table() function to create a new table with the given schema in the database
-
-table_name = "customers"
 create_table(database_name, table_name, col_type, cursor)
 
 # Step 6: Insert data into the table
