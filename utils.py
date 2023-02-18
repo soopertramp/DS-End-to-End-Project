@@ -4,7 +4,7 @@ from typing import List, Tuple, Union
 import mysql.connector as mysql
 
 # Define a function that connects to a MySQL server and creates a cursor object.
-def connect_to_mysql(host: str, user: str, password: str) -> Tuple[str, str]:
+def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connection.MySQLConnection, mysql.cursor.MySQLCursor]:
     """
     Connects to a MySQL server with the given hostname, username, and password.
 
@@ -38,7 +38,7 @@ def connect_to_mysql(host: str, user: str, password: str) -> Tuple[str, str]:
 
 
 # Define a function that creates a new MySQL database.        
-def create_database(cursor: str, database_name: str) -> List:
+def create_database(cursor: mysql.cursor.MySQLCursor, database_name: str) -> List:
     """
     Creates a new MySQL database with the given name.
 
@@ -63,7 +63,7 @@ def create_database(cursor: str, database_name: str) -> List:
     return databases
 
 # Define a function that creates a new MySQL table.        
-def create_table(database_name: str, table_name: str, col_type: str, cursor: str):
+def create_table(database_name: str, table_name: str, col_type: str, cursor: mysql.cursor.MySQLCursor):
     """
     Creates a new MySQL table with the given name, using the specified column names and data types.
 
