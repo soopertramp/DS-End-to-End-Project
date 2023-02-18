@@ -26,4 +26,4 @@ This project showcases the ability to handle real-world data and solve a problem
 
 [Pradeep](https://www.linkedin.com/in/pradeepchandra-reddy-s-c/)
 
-[The Data Science Show (Mitul Patel Msc - Mentor](https://www.linkedin.com/in/mitul-patel2393/) 
+[The Data Science Show (Mitul Patel Msc - Mentor)](https://www.linkedin.com/in/mitul-patel2393/)
