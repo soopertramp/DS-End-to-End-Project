@@ -18,7 +18,6 @@ database_name = 'supermarket'
 data = Path(os.path.join("data","supermarket_sales.csv"))
 table_name = "customers"
 
-
 # Step 1: Connect to MySQL server
 # call connect_to_mysql() function to establish connection
 mydb, cursor = connect_to_mysql(host, user, password)
