@@ -85,11 +85,6 @@ df['date_time'] = datetime_col
 df['date'] = df['date_time'].dt.date
 df['time'] = df['date_time'].dt.time
 
-#df.set_index('date','time', inplace=True)
-
-# df = df.drop(['date_time'], axis=1)
-# df.columns
-
 #total amount of sales per day
 sales_per_day = df.groupby(['date'])['total'].sum()
 
@@ -138,3 +133,38 @@ monthly_sales = df.groupby(df['date_time'].dt.strftime('%Y-%m'))['total'].sum().
 
 monthly_sales.plot(kind='bar', x='date_time', y='total_sales_for_the_month', title='Total Sales Per Month', xlabel='Months', ylabel='Total Sales Per Month ($)')
 plt.show()
+
+# drop the columns 'hourly_date' and 'time' from the dataframe
+df = df.drop(['hourly_date','time'], axis=1)
+
+# extract the date and time components from the 'date_time' column
+# create new columns 'date' and 'time' with these components
+df['date'] = df['date_time'].dt.date
+df['time'] = df['date_time'].dt.time
+
+# drop the 'date_time' column from the dataframe
+df = df.drop(['date_time'], axis=1)
+
+# convert the 'date' column to datetime format
+df['date'] = pd.to_datetime(df['date'])
+
+# convert the 'time' column to datetime format
+#df['time'] = pd.to_datetime(df['time'])
+
+#sorting the data by date in ascending order
+df = df.sort_values(by='date', ascending=True)
+
+#splitting tables
+table1 = df.loc[:, ['branch', 'city', 'customer_type','gender','product_line', 'unit_price']]
+table1.insert(0, 'invoice_id', df['invoice_id'])
+
+table2 = df.loc[:, ['quantity', 'tax_5_percent', 'total', 'date', 'time', 'payment']]
+table2.insert(0, 'invoice_id', df['invoice_id'])
+
+table3 = df.loc[:, ['cogs', 'gross_margin_percentage', 'gross_income', 'rating',]]
+table3.insert(0, 'invoice_id', df['invoice_id'])
+
+# Save the tables as CSV files
+table1.to_csv('table1.csv', index=False)
+table2.to_csv('table2.csv', index=False)
+table3.to_csv('table3.csv', index=False)
