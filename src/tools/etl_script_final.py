@@ -10,7 +10,7 @@ df.head()
 df['date'] = pd.to_datetime(df['date'])
 
 # convert the 'time' column to datetime format
-df['time'] = pd.to_datetime(df['time'])
+#df['time'] = pd.to_datetime(df['time'])
 
 #sorting the data by date in ascending order
 df.sort_values(by='date', ascending=True, ignore_index=True, inplace = True)
