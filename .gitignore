@@ -1,2 +1,7 @@
 __pycache__/utils.cpython-310.pyc
+<<<<<<< HEAD
 .env
+=======
+.env
+src/tools/__pycache__/utils.cpython-310.pyc
+>>>>>>> dbce61c080b88927f69a096f5e89f920df36296e
