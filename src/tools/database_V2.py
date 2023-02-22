@@ -29,11 +29,10 @@ if database:
 # If database is False, create a new table with the given table name and column type
 # and insert the data from the dataframe
 else:
-    create_database(cursor, database_name)
-    create_table(database_name, table_name, col_type, cursor)
     df = get_data(data)
     # create the schema for the database using the create_db_schema() function 
     col_type, values = create_db_schema(df)
+    create_table(database_name, table_name, col_type, cursor)
     for i,row in df.iterrows():
         # create an SQL query string for each row using the values list and the table name
         # and execute it using the cursor object 
