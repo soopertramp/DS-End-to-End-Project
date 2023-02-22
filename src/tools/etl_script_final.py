@@ -23,6 +23,7 @@ table2 = df[['invoice_id', 'quantity', 'tax_5_percent', 'total', 'date', 'time',
 table3 = df[['invoice_id', 'cogs', 'gross_margin_percentage', 'gross_income', 'rating',]]
 
 # Save the tables as CSV files
+df.to_csv('supermarket_sales_cleaned.csv', index=False)
 table1.to_csv('table1.csv', index=False)
 table2.to_csv('table2.csv', index=False)
 table3.to_csv('table3.csv', index=False)
