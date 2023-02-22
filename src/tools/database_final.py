@@ -21,9 +21,6 @@ env_path = Path('.env')
 load_dotenv(env_path)
 password = os.getenv('PASSWORD')
 
-# define variables
-data = Path(args.input_data)
-
 # connect to mysql
 mydb, cursor = connect_to_mysql(host='localhost', user='root', password=password)
 
@@ -31,6 +28,8 @@ if args.create_db:
     databases = create_database(cursor, args.name_the_db)
     print(databases)
 else:
+    # define variables
+    data = Path(args.input_data)
     df = get_data(data)
     col_type, values = create_db_schema(df)
     create_table(args.name_the_db, args.create_table, col_type, cursor)
