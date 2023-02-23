@@ -2,6 +2,7 @@
 import pandas as pd
 from typing import List, Tuple, Union
 import mysql.connector as mysql
+import boto3
 
 # Define a function that connects to a MySQL server and creates a cursor object.
 def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connection.MySQLConnection, mysql.cursor.MySQLCursor]:
