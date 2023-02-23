@@ -1,0 +1,1001 @@
+invoice_id,branch,city,customer_type,gender,product_line,unit_price
+770-42-8960,B,Mandalay,Normal,Male,Food and beverages,21.12
+651-88-7328,A,Yangon,Normal,Female,Fashion accessories,65.74
+530-90-9855,A,Yangon,Member,Male,Home and lifestyle,47.59
+182-52-7000,A,Yangon,Member,Female,Sports and travel,27.04
+133-14-7229,C,Naypyitaw,Normal,Male,Health and beauty,62.87
+416-17-9926,A,Yangon,Member,Female,Electronic accessories,74.22
+556-97-7101,C,Naypyitaw,Normal,Female,Electronic accessories,63.22
+746-04-1077,B,Mandalay,Member,Female,Food and beverages,84.63
+493-65-6248,C,Naypyitaw,Member,Female,Sports and travel,36.98
+765-26-6951,A,Yangon,Normal,Male,Sports and travel,72.61
+271-77-8740,C,Naypyitaw,Member,Female,Sports and travel,29.22
+891-01-7034,B,Mandalay,Normal,Female,Electronic accessories,74.71
+744-09-5786,B,Mandalay,Normal,Male,Electronic accessories,22.01
+198-84-7132,B,Mandalay,Member,Male,Fashion accessories,40.61
+244-08-0162,B,Mandalay,Normal,Female,Health and beauty,34.21
+446-47-6729,C,Naypyitaw,Normal,Male,Fashion accessories,99.82
+504-35-8843,A,Yangon,Normal,Male,Sports and travel,42.47
+712-39-0363,A,Yangon,Member,Male,Food and beverages,41.66
+670-71-7306,B,Mandalay,Normal,Male,Sports and travel,44.63
+345-68-9016,C,Naypyitaw,Member,Female,Sports and travel,31.67
+749-24-1565,A,Yangon,Normal,Female,Health and beauty,23.03
+422-29-8786,A,Yangon,Normal,Female,Home and lifestyle,67.09
+249-42-3782,A,Yangon,Normal,Male,Health and beauty,70.01
+501-61-1753,B,Mandalay,Normal,Female,Home and lifestyle,63.15
+343-87-0864,C,Naypyitaw,Member,Male,Health and beauty,75.88
+875-31-8302,B,Mandalay,Normal,Male,Sports and travel,93.38
+687-15-1097,C,Naypyitaw,Member,Female,Health and beauty,21.12
+552-44-5977,B,Mandalay,Member,Male,Health and beauty,62.0
+731-14-2199,A,Yangon,Member,Female,Home and lifestyle,35.54
+725-32-9708,B,Mandalay,Member,Female,Fashion accessories,68.71
+656-16-1063,B,Mandalay,Normal,Male,Sports and travel,46.42
+132-23-6451,A,Yangon,Member,Male,Health and beauty,20.97
+279-74-2924,B,Mandalay,Member,Male,Electronic accessories,72.17
+672-51-8681,C,Naypyitaw,Member,Female,Electronic accessories,66.65
+801-88-0346,C,Naypyitaw,Normal,Female,Fashion accessories,76.06
+628-34-3388,C,Naypyitaw,Normal,Male,Fashion accessories,27.38
+750-67-8428,A,Yangon,Member,Female,Health and beauty,74.69
+841-18-8232,B,Mandalay,Normal,Female,Food and beverages,71.2
+339-12-4827,B,Mandalay,Member,Female,Fashion accessories,73.96
+489-82-1237,A,Yangon,Normal,Female,Electronic accessories,93.88
+144-51-6085,A,Yangon,Member,Male,Home and lifestyle,70.74
+209-61-0206,A,Yangon,Normal,Female,Home and lifestyle,42.91
+573-98-8548,C,Naypyitaw,Member,Female,Fashion accessories,31.9
+843-01-4703,B,Mandalay,Member,Female,Home and lifestyle,35.38
+217-58-1179,A,Yangon,Member,Male,Home and lifestyle,62.65
+433-08-7822,C,Naypyitaw,Normal,Female,Health and beauty,78.89
+704-11-6354,A,Yangon,Member,Male,Home and lifestyle,58.9
+826-58-8051,B,Mandalay,Normal,Male,Home and lifestyle,62.19
+729-06-2010,B,Mandalay,Member,Male,Health and beauty,80.47
+393-65-2792,C,Naypyitaw,Normal,Male,Food and beverages,89.48
+490-29-1201,A,Yangon,Normal,Female,Sports and travel,15.34
+662-72-2873,A,Yangon,Normal,Female,Food and beverages,40.94
+834-25-9262,C,Naypyitaw,Normal,Female,Fashion accessories,81.68
+846-10-0341,A,Yangon,Normal,Female,Fashion accessories,42.57
+852-82-2749,A,Yangon,Normal,Male,Sports and travel,64.59
+232-16-2483,C,Naypyitaw,Member,Female,Sports and travel,68.12
+390-31-6381,C,Naypyitaw,Normal,Male,Food and beverages,27.22
+541-48-8554,A,Yangon,Normal,Male,Sports and travel,60.95
+889-04-9723,B,Mandalay,Member,Female,Food and beverages,89.14
+566-19-5475,B,Mandalay,Normal,Male,Fashion accessories,47.97
+526-86-8552,C,Naypyitaw,Member,Female,Home and lifestyle,21.82
+109-28-2512,B,Mandalay,Member,Female,Fashion accessories,97.61
+126-54-1082,A,Yangon,Member,Female,Home and lifestyle,21.54
+799-71-1548,A,Yangon,Member,Male,Electronic accessories,77.72
+674-15-9296,A,Yangon,Normal,Male,Sports and travel,37.14
+192-98-7397,C,Naypyitaw,Normal,Male,Fashion accessories,12.78
+457-13-1708,B,Mandalay,Member,Male,Fashion accessories,65.23
+767-97-4650,B,Mandalay,Member,Female,Sports and travel,64.83
+663-86-9076,C,Naypyitaw,Member,Female,Food and beverages,68.54
+571-94-0759,B,Mandalay,Member,Female,Food and beverages,74.6
+189-08-9157,C,Naypyitaw,Normal,Female,Fashion accessories,31.73
+750-57-9686,C,Naypyitaw,Normal,Female,Home and lifestyle,45.38
+257-60-7754,A,Yangon,Normal,Female,Electronic accessories,50.23
+490-95-0021,B,Mandalay,Member,Female,Food and beverages,33.21
+241-96-5076,B,Mandalay,Member,Female,Home and lifestyle,49.1
+442-44-6497,C,Naypyitaw,Member,Male,Home and lifestyle,55.57
+631-34-1880,C,Naypyitaw,Member,Male,Food and beverages,24.31
+124-31-1458,A,Yangon,Member,Female,Electronic accessories,79.59
+840-76-5966,A,Yangon,Member,Male,Sports and travel,12.76
+387-49-4215,B,Mandalay,Member,Female,Sports and travel,48.5
+845-94-6841,C,Naypyitaw,Member,Female,Food and beverages,72.88
+484-22-8230,C,Naypyitaw,Member,Female,Fashion accessories,51.89
+263-10-3913,C,Naypyitaw,Member,Male,Fashion accessories,49.04
+554-42-2417,C,Naypyitaw,Normal,Female,Sports and travel,95.44
+343-75-9322,B,Mandalay,Member,Female,Sports and travel,11.85
+370-96-0655,C,Naypyitaw,Normal,Female,Fashion accessories,49.32
+288-62-1085,A,Yangon,Member,Male,Fashion accessories,38.54
+189-40-5216,C,Naypyitaw,Normal,Male,Electronic accessories,96.37
+867-47-1948,C,Naypyitaw,Normal,Female,Home and lifestyle,15.8
+305-89-2768,B,Mandalay,Member,Female,Home and lifestyle,21.9
+226-34-0034,B,Mandalay,Normal,Female,Electronic accessories,13.78
+640-49-2076,B,Mandalay,Normal,Male,Sports and travel,83.78
+665-32-9167,A,Yangon,Member,Female,Health and beauty,36.26
+603-07-0961,C,Naypyitaw,Member,Male,Electronic accessories,74.79
+577-34-7579,C,Naypyitaw,Member,Male,Food and beverages,50.49
+887-42-0517,C,Naypyitaw,Normal,Female,Sports and travel,83.14
+744-02-5987,A,Yangon,Member,Male,Home and lifestyle,78.38
+241-11-2261,B,Mandalay,Normal,Female,Fashion accessories,79.86
+873-51-0671,A,Yangon,Member,Female,Sports and travel,21.98
+540-11-4336,A,Yangon,Normal,Male,Food and beverages,24.94
+478-06-7835,A,Yangon,Normal,Male,Fashion accessories,89.69
+592-46-1692,C,Naypyitaw,Member,Female,Food and beverages,36.77
+732-67-5346,A,Yangon,Normal,Male,Food and beverages,13.79
+406-46-7107,A,Yangon,Normal,Female,Home and lifestyle,96.52
+130-67-4723,A,Yangon,Member,Male,Food and beverages,48.5
+289-15-7034,A,Yangon,Member,Male,Sports and travel,82.33
+746-68-6593,C,Naypyitaw,Member,Female,Sports and travel,87.16
+647-50-1224,A,Yangon,Normal,Female,Fashion accessories,29.42
+659-36-1684,C,Naypyitaw,Member,Male,Sports and travel,57.12
+848-07-1692,B,Mandalay,Normal,Female,Health and beauty,57.22
+533-66-5566,B,Mandalay,Normal,Female,Home and lifestyle,51.07
+296-11-7041,B,Mandalay,Member,Female,Health and beauty,27.07
+751-15-6198,B,Mandalay,Normal,Male,Sports and travel,23.01
+381-20-0914,A,Yangon,Member,Female,Fashion accessories,20.01
+704-48-3927,A,Yangon,Member,Male,Electronic accessories,88.67
+852-62-7105,B,Mandalay,Normal,Female,Fashion accessories,83.25
+751-41-9720,C,Naypyitaw,Normal,Male,Home and lifestyle,97.5
+197-77-7132,B,Mandalay,Member,Male,Electronic accessories,91.56
+397-25-8725,A,Yangon,Member,Female,Health and beauty,39.62
+460-93-5834,A,Yangon,Normal,Male,Sports and travel,45.58
+327-40-9673,B,Mandalay,Member,Male,Sports and travel,72.6
+195-06-0432,A,Yangon,Member,Male,Home and lifestyle,81.01
+732-94-0499,C,Naypyitaw,Normal,Female,Electronic accessories,41.65
+339-38-9982,B,Mandalay,Member,Male,Fashion accessories,59.86
+784-08-0310,C,Naypyitaw,Member,Female,Food and beverages,21.04
+355-34-6244,B,Mandalay,Normal,Male,Food and beverages,72.39
+556-86-3144,C,Naypyitaw,Member,Female,Fashion accessories,74.29
+459-50-7686,A,Yangon,Normal,Female,Electronic accessories,23.46
+451-73-2711,C,Naypyitaw,Normal,Male,Food and beverages,84.83
+588-47-8641,A,Yangon,Member,Male,Fashion accessories,56.04
+426-39-2418,C,Naypyitaw,Normal,Male,Electronic accessories,61.41
+320-85-2052,B,Mandalay,Normal,Female,Sports and travel,34.81
+868-52-7573,B,Mandalay,Normal,Female,Food and beverages,99.69
+785-13-7708,B,Mandalay,Normal,Male,Food and beverages,73.06
+559-61-5987,B,Mandalay,Normal,Female,Health and beauty,17.75
+592-34-6155,C,Naypyitaw,Normal,Male,Food and beverages,31.77
+667-23-5919,A,Yangon,Member,Female,Fashion accessories,96.7
+704-10-4056,C,Naypyitaw,Member,Male,Health and beauty,60.47
+359-90-3665,B,Mandalay,Member,Female,Fashion accessories,18.08
+377-79-7592,C,Naypyitaw,Member,Female,Electronic accessories,44.84
+658-66-3967,C,Naypyitaw,Normal,Male,Health and beauty,53.19
+314-23-4520,C,Naypyitaw,Member,Male,Health and beauty,81.23
+744-16-7898,B,Mandalay,Normal,Female,Home and lifestyle,97.37
+301-11-9629,A,Yangon,Normal,Female,Sports and travel,19.1
+437-58-8131,B,Mandalay,Normal,Female,Fashion accessories,73.52
+369-82-2676,B,Mandalay,Normal,Male,Electronic accessories,75.66
+299-46-1805,B,Mandalay,Member,Female,Sports and travel,93.72
+272-65-1806,A,Yangon,Normal,Female,Electronic accessories,60.88
+138-17-5109,A,Yangon,Member,Female,Home and lifestyle,89.21
+188-55-0967,B,Mandalay,Member,Male,Health and beauty,66.47
+886-54-6089,A,Yangon,Normal,Female,Home and lifestyle,11.43
+450-28-2866,C,Naypyitaw,Member,Male,Food and beverages,17.44
+589-02-8023,A,Yangon,Member,Male,Food and beverages,83.77
+660-29-7083,C,Naypyitaw,Normal,Male,Electronic accessories,55.87
+648-83-1321,A,Yangon,Member,Male,Home and lifestyle,63.56
+234-65-2137,C,Naypyitaw,Normal,Male,Home and lifestyle,95.58
+677-11-0152,C,Naypyitaw,Normal,Female,Food and beverages,93.26
+618-34-8551,A,Yangon,Normal,Female,Sports and travel,93.18
+347-72-6115,B,Mandalay,Member,Female,Sports and travel,90.74
+859-71-0933,C,Naypyitaw,Member,Female,Sports and travel,15.49
+286-62-6248,B,Mandalay,Normal,Male,Fashion accessories,39.21
+842-29-4695,C,Naypyitaw,Member,Male,Sports and travel,17.14
+372-62-5264,C,Naypyitaw,Normal,Female,Food and beverages,52.6
+659-65-8956,B,Mandalay,Member,Male,Fashion accessories,51.36
+670-79-6321,B,Mandalay,Member,Female,Home and lifestyle,94.59
+679-22-6530,B,Mandalay,Normal,Female,Sports and travel,40.62
+698-98-5964,A,Yangon,Normal,Female,Food and beverages,81.21
+600-38-9738,C,Naypyitaw,Member,Male,Sports and travel,71.92
+101-81-4070,C,Naypyitaw,Member,Female,Health and beauty,62.82
+349-97-8902,B,Mandalay,Member,Male,Food and beverages,57.89
+445-30-9252,A,Yangon,Normal,Male,Sports and travel,25.7
+497-37-6538,A,Yangon,Normal,Male,Sports and travel,58.91
+746-54-5508,A,Yangon,Normal,Male,Home and lifestyle,21.52
+200-16-5952,C,Naypyitaw,Member,Male,Food and beverages,65.65
+280-35-5823,B,Mandalay,Member,Female,Home and lifestyle,86.72
+166-19-2553,A,Yangon,Member,Male,Sports and travel,89.06
+678-79-0726,C,Naypyitaw,Member,Female,Sports and travel,90.63
+622-20-1945,C,Naypyitaw,Normal,Female,Health and beauty,39.42
+562-12-5430,A,Yangon,Member,Female,Fashion accessories,88.15
+821-14-9046,B,Mandalay,Member,Female,Fashion accessories,17.48
+700-81-1757,A,Yangon,Normal,Female,Electronic accessories,26.31
+706-36-6154,A,Yangon,Member,Male,Home and lifestyle,19.36
+414-12-7047,B,Mandalay,Normal,Male,Food and beverages,19.79
+781-84-8059,C,Naypyitaw,Normal,Male,Fashion accessories,60.74
+882-40-4577,A,Yangon,Member,Male,Sports and travel,67.26
+125-45-2293,A,Yangon,Normal,Female,Fashion accessories,99.1
+809-69-9497,A,Yangon,Normal,Female,Home and lifestyle,45.68
+832-51-6761,A,Yangon,Normal,Male,Food and beverages,33.88
+149-61-1929,A,Yangon,Normal,Male,Sports and travel,64.19
+608-27-6295,B,Mandalay,Member,Male,Electronic accessories,52.89
+645-44-1170,A,Yangon,Member,Male,Home and lifestyle,58.07
+375-72-3056,B,Mandalay,Normal,Male,Sports and travel,63.06
+761-49-0439,B,Mandalay,Member,Female,Electronic accessories,12.1
+796-32-9050,A,Yangon,Normal,Male,Food and beverages,51.28
+284-54-4231,C,Naypyitaw,Member,Male,Sports and travel,80.93
+151-27-8496,C,Naypyitaw,Normal,Female,Electronic accessories,56.13
+894-41-5205,C,Naypyitaw,Normal,Female,Food and beverages,43.18
+482-17-1179,A,Yangon,Member,Male,Electronic accessories,11.94
+728-47-9078,C,Naypyitaw,Member,Male,Food and beverages,59.59
+779-06-0012,C,Naypyitaw,Member,Female,Home and lifestyle,88.61
+458-10-8612,C,Naypyitaw,Normal,Male,Health and beauty,64.08
+356-44-8813,B,Mandalay,Normal,Male,Home and lifestyle,37.48
+257-73-1380,C,Naypyitaw,Member,Male,Sports and travel,82.93
+760-27-5490,C,Naypyitaw,Normal,Male,Fashion accessories,15.62
+410-67-1709,A,Yangon,Member,Female,Fashion accessories,63.88
+817-48-8732,A,Yangon,Member,Female,Home and lifestyle,72.35
+725-96-3778,C,Naypyitaw,Member,Female,Home and lifestyle,89.25
+787-87-2010,A,Yangon,Member,Male,Health and beauty,55.5
+378-24-2715,B,Mandalay,Normal,Male,Home and lifestyle,53.44
+645-78-8093,A,Yangon,Normal,Female,Sports and travel,93.14
+329-62-1586,A,Yangon,Normal,Male,Food and beverages,54.67
+269-10-8440,A,Yangon,Member,Male,Health and beauty,53.17
+870-72-4431,C,Naypyitaw,Normal,Female,Health and beauty,99.19
+239-10-7476,A,Yangon,Normal,Female,Home and lifestyle,77.95
+316-68-6352,A,Yangon,Member,Female,Food and beverages,36.36
+401-18-8016,B,Mandalay,Member,Female,Sports and travel,98.13
+162-65-8559,C,Naypyitaw,Member,Male,Food and beverages,68.98
+462-67-9126,A,Yangon,Normal,Male,Home and lifestyle,73.22
+460-35-4390,A,Yangon,Normal,Male,Home and lifestyle,30.68
+287-21-9091,A,Yangon,Normal,Male,Home and lifestyle,74.67
+521-18-7827,C,Naypyitaw,Member,Male,Home and lifestyle,39.39
+563-47-4072,B,Mandalay,Normal,Female,Health and beauty,55.81
+186-09-3669,C,Naypyitaw,Member,Female,Health and beauty,81.51
+756-01-7507,C,Naypyitaw,Normal,Female,Health and beauty,20.38
+120-54-2248,B,Mandalay,Normal,Female,Food and beverages,28.86
+316-66-3011,A,Yangon,Member,Female,Food and beverages,47.63
+148-41-7930,C,Naypyitaw,Normal,Male,Health and beauty,99.96
+790-38-4466,C,Naypyitaw,Normal,Female,Health and beauty,10.99
+213-32-1216,A,Yangon,Normal,Female,Electronic accessories,66.06
+160-22-2687,A,Yangon,Member,Female,Health and beauty,95.95
+318-12-0304,A,Yangon,Normal,Male,Fashion accessories,30.61
+740-22-2500,C,Naypyitaw,Normal,Female,Electronic accessories,84.05
+828-46-6863,A,Yangon,Member,Male,Food and beverages,98.53
+565-80-5980,C,Naypyitaw,Member,Female,Home and lifestyle,47.38
+731-81-9469,C,Naypyitaw,Member,Female,Sports and travel,89.8
+480-63-2856,C,Naypyitaw,Normal,Male,Food and beverages,19.25
+434-83-9547,C,Naypyitaw,Member,Male,Food and beverages,38.47
+809-46-1866,A,Yangon,Normal,Male,Health and beauty,58.15
+767-05-1286,C,Naypyitaw,Member,Female,Home and lifestyle,83.77
+604-70-6476,A,Yangon,Member,Male,Fashion accessories,17.94
+219-61-4139,C,Naypyitaw,Normal,Male,Electronic accessories,83.08
+477-59-2456,C,Naypyitaw,Normal,Female,Fashion accessories,45.44
+435-13-4908,A,Yangon,Member,Male,Fashion accessories,86.68
+510-79-0415,B,Mandalay,Member,Female,Sports and travel,23.08
+235-06-8510,C,Naypyitaw,Member,Male,Home and lifestyle,85.72
+139-20-0155,B,Mandalay,Member,Male,Electronic accessories,40.3
+232-11-3025,A,Yangon,Normal,Male,Sports and travel,78.77
+438-23-1242,B,Mandalay,Normal,Male,Electronic accessories,75.88
+775-72-1988,B,Mandalay,Normal,Male,Home and lifestyle,73.28
+602-16-6955,B,Mandalay,Normal,Female,Sports and travel,76.6
+443-60-9639,C,Naypyitaw,Member,Female,Home and lifestyle,60.87
+789-23-8625,B,Mandalay,Member,Male,Fashion accessories,93.22
+778-34-2523,A,Yangon,Member,Female,Electronic accessories,48.62
+237-44-6163,A,Yangon,Normal,Male,Electronic accessories,10.56
+726-27-2396,A,Yangon,Normal,Female,Health and beauty,77.5
+261-12-8671,B,Mandalay,Normal,Female,Fashion accessories,60.96
+283-79-9594,B,Mandalay,Normal,Female,Food and beverages,48.51
+730-61-8757,B,Mandalay,Member,Male,Health and beauty,51.13
+340-21-9136,A,Yangon,Member,Female,Sports and travel,40.05
+307-83-9164,A,Yangon,Member,Male,Home and lifestyle,60.01
+569-71-4390,B,Mandalay,Normal,Male,Sports and travel,21.87
+268-03-6164,B,Mandalay,Normal,Male,Health and beauty,96.11
+778-71-5554,C,Naypyitaw,Member,Male,Fashion accessories,15.43
+145-94-9061,B,Mandalay,Normal,Female,Food and beverages,88.36
+843-73-4724,A,Yangon,Normal,Male,Fashion accessories,74.1
+191-10-6171,B,Mandalay,Normal,Female,Fashion accessories,39.62
+288-38-3758,C,Naypyitaw,Member,Female,Fashion accessories,84.87
+280-17-4359,C,Naypyitaw,Member,Male,Health and beauty,90.5
+394-55-6384,C,Naypyitaw,Member,Female,Sports and travel,70.19
+824-88-3614,C,Naypyitaw,Normal,Male,Health and beauty,34.31
+888-02-0338,A,Yangon,Normal,Male,Electronic accessories,26.23
+856-66-2701,A,Yangon,Member,Male,Home and lifestyle,53.3
+881-41-7302,C,Naypyitaw,Normal,Female,Fashion accessories,64.99
+896-34-0956,A,Yangon,Normal,Male,Fashion accessories,21.32
+308-39-1707,A,Yangon,Normal,Female,Fashion accessories,12.09
+135-13-8269,B,Mandalay,Member,Female,Food and beverages,78.88
+539-21-7227,B,Mandalay,Normal,Female,Sports and travel,51.54
+794-42-3736,B,Mandalay,Normal,Male,Food and beverages,33.33
+847-38-7188,B,Mandalay,Normal,Female,Food and beverages,96.68
+834-61-8124,A,Yangon,Normal,Male,Electronic accessories,51.69
+836-82-5858,B,Mandalay,Member,Male,Health and beauty,69.37
+641-43-2399,B,Mandalay,Normal,Male,Home and lifestyle,25.55
+258-69-7810,C,Naypyitaw,Normal,Female,Fashion accessories,36.85
+452-04-8808,B,Mandalay,Normal,Male,Electronic accessories,87.08
+289-65-5721,B,Mandalay,Normal,Female,Fashion accessories,81.37
+316-55-4634,B,Mandalay,Member,Male,Food and beverages,80.05
+173-82-9529,B,Mandalay,Normal,Female,Fashion accessories,37.95
+225-32-0908,C,Naypyitaw,Normal,Female,Sports and travel,44.86
+176-78-1170,C,Naypyitaw,Member,Male,Health and beauty,33.81
+394-41-0748,C,Naypyitaw,Member,Female,Fashion accessories,54.07
+123-19-1176,A,Yangon,Member,Male,Health and beauty,58.22
+325-90-8763,C,Naypyitaw,Member,Female,Electronic accessories,46.57
+869-11-3082,B,Mandalay,Member,Male,Health and beauty,96.16
+862-59-8517,C,Naypyitaw,Normal,Female,Food and beverages,90.24
+585-90-0249,A,Yangon,Member,Male,Electronic accessories,73.26
+870-54-3162,A,Yangon,Normal,Female,Sports and travel,32.25
+624-01-8356,B,Mandalay,Normal,Female,Home and lifestyle,49.01
+595-27-4851,A,Yangon,Normal,Female,Fashion accessories,54.28
+534-01-4457,A,Yangon,Normal,Male,Food and beverages,81.71
+788-07-8452,C,Naypyitaw,Member,Female,Home and lifestyle,24.24
+613-59-9758,C,Naypyitaw,Normal,Female,Sports and travel,14.36
+633-91-1052,A,Yangon,Normal,Female,Home and lifestyle,12.03
+620-02-2046,C,Naypyitaw,Normal,Male,Home and lifestyle,69.4
+865-41-9075,A,Yangon,Normal,Male,Food and beverages,11.53
+243-47-2663,C,Naypyitaw,Member,Male,Electronic accessories,18.77
+372-26-1506,C,Naypyitaw,Normal,Female,Fashion accessories,23.82
+149-71-6266,B,Mandalay,Member,Male,Sports and travel,78.07
+400-89-4171,C,Naypyitaw,Normal,Female,Sports and travel,80.97
+430-53-4718,B,Mandalay,Member,Male,Health and beauty,75.37
+390-80-5128,B,Mandalay,Member,Female,Health and beauty,19.15
+699-88-1972,B,Mandalay,Normal,Male,Health and beauty,99.16
+342-65-4817,C,Naypyitaw,Member,Male,Health and beauty,86.8
+593-65-1552,C,Naypyitaw,Normal,Female,Home and lifestyle,69.81
+726-29-6793,A,Yangon,Member,Male,Electronic accessories,24.18
+544-55-9589,B,Mandalay,Member,Female,Electronic accessories,21.43
+211-30-9270,C,Naypyitaw,Normal,Male,Health and beauty,17.41
+222-42-0244,B,Mandalay,Member,Female,Health and beauty,72.11
+569-76-2760,A,Yangon,Member,Female,Sports and travel,22.01
+110-48-7033,B,Mandalay,Member,Male,Fashion accessories,32.62
+233-67-5758,C,Naypyitaw,Normal,Male,Health and beauty,40.35
+382-25-8917,C,Naypyitaw,Normal,Male,Fashion accessories,42.08
+137-63-5492,C,Naypyitaw,Normal,Male,Electronic accessories,58.76
+343-61-3544,B,Mandalay,Member,Male,Sports and travel,26.67
+746-94-0204,A,Yangon,Normal,Male,Fashion accessories,83.24
+862-17-9201,B,Mandalay,Normal,Female,Food and beverages,84.05
+606-80-4905,C,Naypyitaw,Member,Female,Sports and travel,19.15
+816-72-8853,A,Yangon,Member,Female,Sports and travel,27.93
+800-09-8606,A,Yangon,Member,Female,Home and lifestyle,87.37
+575-67-1508,A,Yangon,Normal,Male,Electronic accessories,38.6
+134-54-4720,B,Mandalay,Normal,Female,Electronic accessories,42.42
+862-29-5914,C,Naypyitaw,Normal,Female,Sports and travel,22.38
+182-69-8360,B,Mandalay,Normal,Female,Electronic accessories,23.65
+804-38-3935,A,Yangon,Member,Male,Electronic accessories,93.78
+283-26-5248,C,Naypyitaw,Member,Female,Food and beverages,98.52
+556-72-8512,C,Naypyitaw,Normal,Male,Home and lifestyle,22.96
+416-13-5917,C,Naypyitaw,Normal,Female,Food and beverages,97.03
+664-14-2882,C,Naypyitaw,Member,Female,Home and lifestyle,10.53
+423-80-0988,C,Naypyitaw,Normal,Male,Sports and travel,76.4
+189-55-2313,C,Naypyitaw,Normal,Female,Fashion accessories,62.18
+583-72-1480,C,Naypyitaw,Member,Male,Electronic accessories,37.06
+239-36-3640,B,Mandalay,Normal,Male,Electronic accessories,45.35
+735-32-9839,C,Naypyitaw,Member,Male,Fashion accessories,98.7
+226-71-3580,C,Naypyitaw,Normal,Female,Sports and travel,23.75
+286-75-7818,B,Mandalay,Normal,Male,Fashion accessories,69.08
+366-93-0948,A,Yangon,Member,Male,Electronic accessories,66.35
+525-09-8450,B,Mandalay,Normal,Male,Electronic accessories,72.13
+834-45-5519,B,Mandalay,Normal,Female,Electronic accessories,43.0
+525-88-7307,B,Mandalay,Member,Male,Sports and travel,75.82
+187-83-5490,A,Yangon,Member,Male,Electronic accessories,20.77
+532-59-7201,B,Mandalay,Member,Male,Sports and travel,79.93
+522-57-8364,A,Yangon,Member,Male,Fashion accessories,51.34
+457-94-0464,B,Mandalay,Member,Male,Electronic accessories,87.87
+551-21-3069,C,Naypyitaw,Normal,Female,Electronic accessories,23.07
+237-01-6122,C,Naypyitaw,Member,Female,Home and lifestyle,80.79
+358-88-9262,C,Naypyitaw,Member,Female,Food and beverages,87.48
+105-31-1824,A,Yangon,Member,Male,Sports and travel,69.52
+870-76-1733,A,Yangon,Member,Female,Food and beverages,14.23
+443-82-0585,A,Yangon,Member,Female,Health and beauty,77.68
+541-08-3113,C,Naypyitaw,Normal,Male,Food and beverages,65.97
+418-05-0656,B,Mandalay,Normal,Female,Fashion accessories,25.56
+405-31-3305,A,Yangon,Member,Male,Fashion accessories,43.13
+717-96-4189,C,Naypyitaw,Normal,Female,Electronic accessories,35.49
+390-17-5806,C,Naypyitaw,Member,Female,Food and beverages,38.42
+201-86-2184,B,Mandalay,Member,Female,Electronic accessories,26.26
+756-93-1854,C,Naypyitaw,Member,Female,Fashion accessories,83.35
+420-18-8989,A,Yangon,Member,Female,Sports and travel,51.52
+642-32-2990,A,Yangon,Normal,Female,Food and beverages,10.96
+845-51-0542,B,Mandalay,Member,Male,Food and beverages,46.55
+376-56-3573,C,Naypyitaw,Normal,Female,Fashion accessories,95.42
+382-03-4532,A,Yangon,Member,Female,Health and beauty,18.33
+554-53-8700,C,Naypyitaw,Member,Male,Home and lifestyle,56.11
+376-02-8238,B,Mandalay,Normal,Male,Home and lifestyle,93.87
+676-10-2200,B,Mandalay,Member,Male,Fashion accessories,53.78
+443-59-0061,A,Yangon,Member,Male,Food and beverages,67.45
+326-78-5178,C,Naypyitaw,Member,Male,Food and beverages,91.4
+585-86-8361,A,Yangon,Normal,Female,Food and beverages,27.28
+277-63-2961,B,Mandalay,Member,Male,Sports and travel,73.97
+322-02-2271,B,Mandalay,Normal,Female,Sports and travel,42.97
+742-04-5161,A,Yangon,Member,Male,Home and lifestyle,72.78
+347-34-2234,B,Mandalay,Member,Female,Sports and travel,55.07
+718-57-9773,C,Naypyitaw,Normal,Female,Sports and travel,49.33
+190-59-3964,B,Mandalay,Member,Male,Food and beverages,47.16
+326-71-2155,C,Naypyitaw,Normal,Female,Sports and travel,73.95
+639-76-1242,C,Naypyitaw,Normal,Male,Food and beverages,40.52
+430-60-3493,A,Yangon,Member,Female,Home and lifestyle,94.88
+566-71-1091,A,Yangon,Normal,Male,Fashion accessories,77.02
+151-33-7434,B,Mandalay,Normal,Female,Food and beverages,67.77
+745-71-3520,A,Yangon,Member,Female,Electronic accessories,25.22
+627-95-3243,B,Mandalay,Member,Female,Home and lifestyle,77.68
+518-17-2983,A,Yangon,Normal,Female,Fashion accessories,48.63
+434-35-9162,B,Mandalay,Member,Male,Food and beverages,23.34
+404-91-5964,A,Yangon,Normal,Male,Electronic accessories,74.58
+695-28-6250,A,Yangon,Normal,Female,Sports and travel,43.06
+268-20-3585,C,Naypyitaw,Normal,Female,Health and beauty,13.85
+198-66-9832,B,Mandalay,Member,Female,Fashion accessories,72.04
+441-94-7118,A,Yangon,Member,Male,Electronic accessories,71.95
+236-86-3015,C,Naypyitaw,Member,Male,Home and lifestyle,13.98
+338-65-2210,C,Naypyitaw,Member,Female,Health and beauty,68.6
+324-92-3863,A,Yangon,Member,Male,Electronic accessories,20.89
+181-94-6432,C,Naypyitaw,Member,Male,Fashion accessories,69.33
+307-04-2070,A,Yangon,Member,Female,Fashion accessories,30.62
+325-89-4209,A,Yangon,Member,Male,Food and beverages,87.9
+210-67-5886,C,Naypyitaw,Member,Female,Health and beauty,98.21
+880-35-0356,A,Yangon,Member,Female,Sports and travel,75.2
+479-26-8945,B,Mandalay,Member,Female,Sports and travel,16.49
+729-09-9681,A,Yangon,Member,Male,Home and lifestyle,25.91
+409-49-6995,C,Naypyitaw,Member,Female,Food and beverages,47.27
+374-17-3652,B,Mandalay,Member,Female,Food and beverages,42.82
+210-57-1719,B,Mandalay,Normal,Female,Health and beauty,58.24
+811-35-1094,B,Mandalay,Member,Male,Electronic accessories,50.45
+149-14-0304,C,Naypyitaw,Member,Female,Health and beauty,28.5
+351-62-0822,B,Mandalay,Member,Female,Fashion accessories,14.48
+471-06-8611,C,Naypyitaw,Normal,Female,Food and beverages,52.42
+727-46-3608,B,Mandalay,Member,Female,Food and beverages,20.01
+595-86-2894,C,Naypyitaw,Member,Male,Fashion accessories,96.98
+258-92-7466,A,Yangon,Normal,Female,Health and beauty,35.68
+875-46-5808,B,Mandalay,Member,Male,Health and beauty,25.9
+609-81-8548,A,Yangon,Member,Female,Home and lifestyle,37.44
+857-67-9057,B,Mandalay,Normal,Male,Electronic accessories,22.95
+373-88-1424,C,Naypyitaw,Member,Male,Home and lifestyle,35.81
+183-56-6882,C,Naypyitaw,Member,Female,Food and beverages,99.42
+512-91-0811,C,Naypyitaw,Normal,Male,Health and beauty,89.75
+560-49-6611,A,Yangon,Member,Female,Sports and travel,45.58
+430-02-3888,B,Mandalay,Normal,Male,Electronic accessories,46.02
+641-96-3695,C,Naypyitaw,Member,Female,Fashion accessories,43.46
+214-17-6927,C,Naypyitaw,Normal,Female,Food and beverages,16.48
+114-35-5271,B,Mandalay,Normal,Female,Electronic accessories,57.91
+374-38-5555,B,Mandalay,Normal,Female,Fashion accessories,63.71
+453-33-6436,A,Yangon,Normal,Female,Home and lifestyle,93.12
+648-94-3045,C,Naypyitaw,Normal,Male,Health and beauty,58.95
+635-40-6220,A,Yangon,Normal,Male,Health and beauty,89.6
+380-94-4661,C,Naypyitaw,Member,Male,Electronic accessories,65.94
+784-21-9238,C,Naypyitaw,Member,Male,Sports and travel,10.17
+744-82-9138,C,Naypyitaw,Normal,Male,Fashion accessories,86.13
+810-60-6344,C,Naypyitaw,Normal,Female,Electronic accessories,40.86
+827-44-5872,B,Mandalay,Member,Female,Food and beverages,54.36
+583-41-4548,C,Naypyitaw,Normal,Male,Home and lifestyle,16.67
+868-81-1752,B,Mandalay,Normal,Male,Home and lifestyle,22.02
+626-43-7888,C,Naypyitaw,Normal,Female,Fashion accessories,60.41
+252-56-2699,A,Yangon,Normal,Male,Food and beverages,43.19
+421-95-9805,A,Yangon,Normal,Female,Electronic accessories,28.96
+533-33-5337,B,Mandalay,Normal,Male,Electronic accessories,79.39
+756-49-0168,A,Yangon,Member,Male,Fashion accessories,19.7
+815-04-6282,C,Naypyitaw,Member,Female,Sports and travel,64.97
+181-82-6255,B,Mandalay,Normal,Female,Home and lifestyle,16.37
+830-58-2383,B,Mandalay,Normal,Male,Home and lifestyle,31.75
+440-59-5691,C,Naypyitaw,Member,Female,Health and beauty,37.15
+549-84-7482,B,Mandalay,Normal,Female,Sports and travel,90.28
+373-73-7910,A,Yangon,Normal,Male,Sports and travel,86.31
+649-29-6775,B,Mandalay,Normal,Male,Fashion accessories,33.52
+687-47-8271,A,Yangon,Normal,Male,Fashion accessories,98.98
+732-04-5373,B,Mandalay,Member,Male,Home and lifestyle,46.47
+271-88-8734,C,Naypyitaw,Member,Female,Fashion accessories,97.21
+354-25-5821,B,Mandalay,Member,Female,Sports and travel,69.12
+727-02-1313,A,Yangon,Member,Male,Food and beverages,31.84
+450-42-3339,C,Naypyitaw,Normal,Male,Health and beauty,84.61
+747-58-7183,B,Mandalay,Normal,Male,Fashion accessories,57.27
+746-19-0921,C,Naypyitaw,Normal,Male,Food and beverages,21.58
+871-39-9221,C,Naypyitaw,Normal,Female,Electronic accessories,12.45
+428-83-5800,C,Naypyitaw,Member,Female,Food and beverages,21.08
+602-80-9671,C,Naypyitaw,Member,Female,Home and lifestyle,15.95
+146-09-5432,A,Yangon,Member,Male,Food and beverages,35.04
+200-40-6154,B,Mandalay,Member,Male,Home and lifestyle,65.91
+130-98-8941,C,Naypyitaw,Normal,Male,Fashion accessories,64.26
+866-05-7563,B,Mandalay,Member,Female,Electronic accessories,81.4
+447-15-7839,A,Yangon,Member,Female,Sports and travel,22.24
+509-10-0516,B,Mandalay,Normal,Male,Home and lifestyle,45.97
+669-54-1719,B,Mandalay,Member,Male,Electronic accessories,18.93
+559-98-9873,A,Yangon,Member,Female,Fashion accessories,53.65
+162-48-8011,A,Yangon,Member,Female,Food and beverages,44.59
+196-01-2849,C,Naypyitaw,Member,Female,Fashion accessories,73.38
+838-78-4295,C,Naypyitaw,Normal,Female,Health and beauty,33.47
+400-60-7251,A,Yangon,Normal,Male,Home and lifestyle,74.07
+378-07-7001,B,Mandalay,Member,Male,Electronic accessories,48.09
+695-51-0018,B,Mandalay,Normal,Female,Sports and travel,34.84
+685-64-1609,A,Yangon,Member,Female,Fashion accessories,30.14
+227-07-4446,C,Naypyitaw,Member,Female,Electronic accessories,78.13
+448-34-8700,B,Mandalay,Member,Male,Home and lifestyle,36.91
+418-02-5978,B,Mandalay,Normal,Female,Health and beauty,84.09
+401-09-4232,C,Naypyitaw,Member,Male,Home and lifestyle,86.69
+796-12-2025,C,Naypyitaw,Normal,Male,Fashion accessories,62.12
+531-56-4728,A,Yangon,Normal,Male,Home and lifestyle,80.08
+866-99-7614,C,Naypyitaw,Normal,Male,Food and beverages,89.2
+284-34-9626,B,Mandalay,Normal,Female,Home and lifestyle,77.04
+534-53-3526,A,Yangon,Normal,Female,Sports and travel,94.76
+842-40-8179,B,Mandalay,Member,Female,Food and beverages,77.2
+365-64-0515,A,Yangon,Normal,Female,Electronic accessories,46.95
+549-03-9315,B,Mandalay,Normal,Male,Fashion accessories,94.87
+287-83-1405,A,Yangon,Normal,Male,Health and beauty,25.43
+373-14-0504,A,Yangon,Member,Female,Sports and travel,71.63
+528-87-5606,B,Mandalay,Member,Female,Electronic accessories,39.48
+641-51-2661,C,Naypyitaw,Member,Female,Food and beverages,87.1
+885-56-0389,C,Naypyitaw,Member,Male,Fashion accessories,52.35
+305-18-3552,B,Mandalay,Member,Male,Home and lifestyle,60.38
+173-50-1108,B,Mandalay,Member,Female,Sports and travel,20.18
+139-52-2867,C,Naypyitaw,Normal,Female,Fashion accessories,22.51
+151-16-1484,A,Yangon,Member,Male,Electronic accessories,32.25
+339-18-7061,C,Naypyitaw,Member,Female,Fashion accessories,92.98
+563-36-9814,A,Yangon,Member,Male,Electronic accessories,76.82
+549-23-9016,C,Naypyitaw,Member,Female,Food and beverages,14.87
+388-76-2555,B,Mandalay,Normal,Male,Sports and travel,13.69
+767-54-1907,B,Mandalay,Member,Female,Fashion accessories,29.56
+174-36-3675,C,Naypyitaw,Member,Male,Food and beverages,99.37
+150-89-8043,A,Yangon,Normal,Male,Sports and travel,44.65
+109-86-4363,B,Mandalay,Member,Female,Sports and travel,60.08
+235-46-8343,C,Naypyitaw,Member,Male,Food and beverages,27.66
+638-60-7125,A,Yangon,Normal,Female,Electronic accessories,99.56
+853-23-2453,B,Mandalay,Member,Male,Health and beauty,75.74
+545-07-8534,C,Naypyitaw,Normal,Female,Health and beauty,58.32
+528-14-9470,A,Yangon,Member,Male,Health and beauty,91.3
+556-41-6224,C,Naypyitaw,Normal,Male,Health and beauty,33.64
+541-89-9860,C,Naypyitaw,Member,Female,Fashion accessories,80.48
+233-34-0817,C,Naypyitaw,Member,Female,Electronic accessories,98.84
+710-46-4433,B,Mandalay,Member,Female,Food and beverages,77.4
+246-11-3901,C,Naypyitaw,Normal,Female,Electronic accessories,32.8
+305-03-2383,A,Yangon,Normal,Female,Food and beverages,67.1
+860-79-0874,C,Naypyitaw,Member,Female,Fashion accessories,99.3
+136-08-6195,A,Yangon,Normal,Female,Home and lifestyle,69.96
+431-66-2305,B,Mandalay,Normal,Female,Electronic accessories,88.25
+497-36-0989,A,Yangon,Normal,Male,Fashion accessories,51.94
+152-68-2907,A,Yangon,Normal,Male,Food and beverages,52.2
+321-49-7382,B,Mandalay,Member,Male,Sports and travel,88.31
+234-36-2483,B,Mandalay,Normal,Male,Health and beauty,57.59
+873-95-4984,B,Mandalay,Member,Female,Health and beauty,76.9
+227-78-1148,B,Mandalay,Normal,Female,Fashion accessories,72.84
+400-80-4065,C,Naypyitaw,Member,Male,Health and beauty,68.55
+394-43-4238,B,Mandalay,Member,Male,Home and lifestyle,17.77
+285-68-5083,C,Naypyitaw,Member,Female,Sports and travel,24.74
+372-94-8041,A,Yangon,Normal,Male,Health and beauty,15.26
+873-14-6353,A,Yangon,Member,Male,Food and beverages,24.82
+273-84-2164,C,Naypyitaw,Member,Male,Electronic accessories,12.05
+133-77-3154,B,Mandalay,Member,Male,Fashion accessories,60.18
+241-72-9525,B,Mandalay,Normal,Male,Sports and travel,51.91
+598-06-7312,B,Mandalay,Member,Male,Fashion accessories,91.35
+587-03-7455,C,Naypyitaw,Member,Female,Fashion accessories,97.79
+895-03-6665,B,Mandalay,Normal,Female,Fashion accessories,36.51
+408-66-6712,C,Naypyitaw,Member,Female,Health and beauty,47.71
+420-11-4919,C,Naypyitaw,Member,Female,Food and beverages,71.39
+803-17-8013,A,Yangon,Member,Female,Home and lifestyle,88.79
+788-21-5741,A,Yangon,Normal,Male,Fashion accessories,45.38
+636-48-8204,A,Yangon,Normal,Male,Electronic accessories,34.56
+389-25-3394,C,Naypyitaw,Normal,Male,Electronic accessories,11.81
+827-77-7633,A,Yangon,Normal,Male,Sports and travel,98.09
+612-36-5536,A,Yangon,Member,Male,Food and beverages,80.96
+131-70-8179,A,Yangon,Member,Female,Health and beauty,92.09
+590-83-4591,B,Mandalay,Member,Male,Electronic accessories,87.45
+201-63-8275,C,Naypyitaw,Member,Female,Sports and travel,67.99
+123-35-4896,C,Naypyitaw,Normal,Female,Sports and travel,46.66
+785-96-0615,B,Mandalay,Member,Female,Electronic accessories,35.74
+634-97-8956,A,Yangon,Normal,Male,Food and beverages,32.9
+597-78-7908,C,Naypyitaw,Normal,Male,Fashion accessories,90.22
+354-39-5160,A,Yangon,Member,Female,Home and lifestyle,34.42
+849-09-3807,A,Yangon,Member,Female,Fashion accessories,88.34
+764-44-8999,B,Mandalay,Normal,Female,Health and beauty,14.76
+278-97-7759,A,Yangon,Member,Female,Electronic accessories,62.48
+652-49-6720,C,Naypyitaw,Member,Female,Electronic accessories,60.95
+787-15-1757,C,Naypyitaw,Member,Male,Health and beauty,44.07
+409-33-9708,A,Yangon,Normal,Female,Fashion accessories,98.48
+384-59-6655,A,Yangon,Member,Female,Food and beverages,98.66
+752-23-3760,B,Mandalay,Member,Female,Sports and travel,64.08
+886-77-9084,C,Naypyitaw,Normal,Male,Electronic accessories,71.89
+183-21-3799,C,Naypyitaw,Normal,Female,Electronic accessories,77.63
+272-27-9238,C,Naypyitaw,Normal,Female,Food and beverages,41.24
+868-06-0466,A,Yangon,Member,Male,Electronic accessories,69.58
+629-42-4133,C,Naypyitaw,Normal,Male,Health and beauty,21.8
+449-16-6770,A,Yangon,Normal,Male,Health and beauty,50.79
+498-41-1961,B,Mandalay,Normal,Male,Health and beauty,66.68
+458-61-0011,B,Mandalay,Normal,Male,Food and beverages,60.3
+848-95-6252,C,Naypyitaw,Member,Female,Home and lifestyle,86.27
+782-95-9291,A,Yangon,Member,Male,Food and beverages,92.29
+546-80-2899,A,Yangon,Member,Male,Home and lifestyle,37.69
+311-13-6971,B,Mandalay,Member,Male,Sports and travel,31.99
+779-42-2410,B,Mandalay,Member,Male,Food and beverages,57.74
+725-56-0833,A,Yangon,Normal,Female,Health and beauty,32.32
+548-46-9322,B,Mandalay,Normal,Male,Food and beverages,39.9
+692-92-5582,B,Mandalay,Member,Female,Food and beverages,54.84
+279-62-1445,C,Naypyitaw,Member,Female,Fashion accessories,12.54
+389-70-2397,C,Naypyitaw,Normal,Female,Health and beauty,83.66
+714-02-3114,C,Naypyitaw,Normal,Female,Sports and travel,98.8
+269-04-5750,B,Mandalay,Member,Male,Fashion accessories,73.82
+319-74-2561,A,Yangon,Member,Female,Electronic accessories,94.64
+503-21-4385,B,Mandalay,Member,Male,Health and beauty,39.91
+743-88-1662,C,Naypyitaw,Normal,Male,Sports and travel,95.49
+831-64-0259,B,Mandalay,Normal,Female,Fashion accessories,39.75
+777-67-2495,B,Mandalay,Normal,Male,Home and lifestyle,68.97
+582-52-8065,B,Mandalay,Normal,Female,Fashion accessories,54.31
+837-55-7229,B,Mandalay,Normal,Female,Fashion accessories,47.44
+807-14-7833,A,Yangon,Member,Female,Electronic accessories,17.42
+488-25-4221,C,Naypyitaw,Member,Female,Food and beverages,30.41
+690-01-6631,B,Mandalay,Normal,Male,Fashion accessories,17.49
+347-56-2442,A,Yangon,Normal,Male,Home and lifestyle,65.82
+864-24-7918,A,Yangon,Member,Female,Sports and travel,24.49
+838-02-1821,C,Naypyitaw,Member,Female,Home and lifestyle,12.73
+396-90-2219,B,Mandalay,Normal,Female,Electronic accessories,14.96
+787-56-0757,C,Naypyitaw,Member,Female,Food and beverages,80.36
+190-14-3147,B,Mandalay,Normal,Female,Health and beauty,17.97
+729-46-7422,C,Naypyitaw,Normal,Male,Food and beverages,35.89
+695-09-5146,B,Mandalay,Member,Female,Food and beverages,98.79
+831-81-6575,B,Mandalay,Member,Female,Electronic accessories,75.59
+274-05-5470,A,Yangon,Member,Female,Food and beverages,73.47
+503-07-0930,C,Naypyitaw,Member,Male,Sports and travel,58.39
+692-27-8933,B,Mandalay,Normal,Female,Sports and travel,57.95
+380-60-5336,A,Yangon,Normal,Female,Electronic accessories,40.26
+516-77-6464,C,Naypyitaw,Member,Female,Health and beauty,10.16
+242-11-3142,B,Mandalay,Member,Male,Fashion accessories,83.77
+740-11-5257,C,Naypyitaw,Normal,Male,Electronic accessories,24.74
+186-43-8965,A,Yangon,Member,Female,Home and lifestyle,47.68
+365-16-4334,B,Mandalay,Normal,Female,Food and beverages,26.43
+315-22-5665,C,Naypyitaw,Normal,Female,Home and lifestyle,73.56
+803-83-5989,C,Naypyitaw,Normal,Male,Home and lifestyle,55.73
+300-71-4605,C,Naypyitaw,Member,Male,Electronic accessories,86.04
+871-79-8483,B,Mandalay,Normal,Male,Fashion accessories,94.13
+459-45-2396,A,Yangon,Member,Female,Food and beverages,99.6
+574-80-1489,B,Mandalay,Member,Female,Food and beverages,62.85
+608-05-3804,B,Mandalay,Member,Male,Electronic accessories,39.75
+355-53-5943,A,Yangon,Member,Female,Electronic accessories,68.84
+719-89-8991,A,Yangon,Member,Female,Sports and travel,91.41
+275-28-0149,A,Yangon,Normal,Male,Sports and travel,63.69
+308-81-0538,A,Yangon,Normal,Female,Fashion accessories,73.05
+834-83-1826,B,Mandalay,Member,Female,Home and lifestyle,82.04
+502-05-1910,A,Yangon,Normal,Male,Health and beauty,65.18
+866-70-2814,B,Mandalay,Normal,Female,Electronic accessories,52.79
+511-54-3087,B,Mandalay,Normal,Male,Sports and travel,88.45
+505-02-0892,B,Mandalay,Member,Male,Health and beauty,42.57
+735-06-4124,C,Naypyitaw,Normal,Male,Food and beverages,48.61
+636-17-0325,B,Mandalay,Normal,Male,Health and beauty,62.57
+154-74-7179,B,Mandalay,Normal,Male,Sports and travel,54.45
+477-24-6490,B,Mandalay,Normal,Female,Health and beauty,99.71
+702-72-0487,A,Yangon,Normal,Female,Electronic accessories,46.61
+466-61-5506,B,Mandalay,Member,Female,Electronic accessories,90.7
+437-53-3084,B,Mandalay,Normal,Male,Fashion accessories,99.89
+649-11-3678,C,Naypyitaw,Normal,Female,Food and beverages,22.93
+491-38-3499,A,Yangon,Member,Male,Fashion accessories,55.45
+707-32-7409,B,Mandalay,Member,Female,Sports and travel,95.54
+518-71-6847,B,Mandalay,Member,Male,Food and beverages,26.6
+741-73-3559,B,Mandalay,Normal,Male,Sports and travel,67.27
+105-10-6182,A,Yangon,Member,Male,Fashion accessories,21.48
+400-45-1220,B,Mandalay,Normal,Female,Health and beauty,13.5
+250-81-7186,C,Naypyitaw,Normal,Female,Electronic accessories,99.69
+135-84-8019,A,Yangon,Normal,Female,Fashion accessories,77.93
+605-72-4132,C,Naypyitaw,Normal,Female,Food and beverages,94.47
+318-68-5053,B,Mandalay,Normal,Female,Health and beauty,76.99
+191-29-0321,B,Mandalay,Member,Female,Fashion accessories,19.77
+665-63-9737,B,Mandalay,Normal,Male,Fashion accessories,52.42
+243-55-8457,A,Yangon,Normal,Female,Food and beverages,74.44
+263-12-5321,A,Yangon,Member,Male,Electronic accessories,92.6
+370-41-7321,B,Mandalay,Member,Male,Health and beauty,56.69
+250-17-5703,A,Yangon,Member,Male,Food and beverages,18.85
+759-98-4285,C,Naypyitaw,Member,Female,Health and beauty,85.87
+709-58-4068,B,Mandalay,Normal,Female,Fashion accessories,41.09
+399-46-5918,C,Naypyitaw,Normal,Female,Electronic accessories,85.98
+786-94-2700,A,Yangon,Member,Male,Food and beverages,80.62
+635-28-5728,A,Yangon,Normal,Male,Health and beauty,56.0
+142-72-4741,C,Naypyitaw,Member,Male,Fashion accessories,93.2
+291-59-1384,B,Mandalay,Normal,Male,Electronic accessories,60.3
+220-28-1851,A,Yangon,Normal,Male,Home and lifestyle,34.73
+470-31-3286,B,Mandalay,Normal,Male,Health and beauty,14.82
+811-03-8790,A,Yangon,Normal,Female,Electronic accessories,45.48
+207-73-1363,B,Mandalay,Normal,Male,Health and beauty,69.51
+453-63-6187,B,Mandalay,Normal,Male,Electronic accessories,27.5
+339-96-8318,B,Mandalay,Member,Male,Fashion accessories,81.31
+238-45-6950,B,Mandalay,Member,Male,Food and beverages,53.72
+247-11-2470,A,Yangon,Member,Female,Fashion accessories,22.32
+189-98-2939,C,Naypyitaw,Normal,Male,Fashion accessories,78.55
+153-58-4872,C,Naypyitaw,Member,Female,Food and beverages,74.89
+346-84-3103,B,Mandalay,Member,Female,Electronic accessories,13.22
+860-73-6466,A,Yangon,Member,Female,Sports and travel,39.47
+408-26-9866,C,Naypyitaw,Normal,Female,Sports and travel,73.98
+303-96-2227,B,Mandalay,Normal,Female,Home and lifestyle,97.38
+565-67-6697,B,Mandalay,Member,Male,Home and lifestyle,27.0
+883-17-4236,C,Naypyitaw,Normal,Female,Sports and travel,14.39
+640-48-5028,B,Mandalay,Member,Female,Home and lifestyle,88.39
+576-31-4774,B,Mandalay,Normal,Female,Health and beauty,73.41
+878-30-2331,C,Naypyitaw,Member,Female,Sports and travel,54.55
+720-72-2436,A,Yangon,Normal,Male,Food and beverages,66.52
+825-94-5922,B,Mandalay,Normal,Male,Sports and travel,25.31
+817-69-8206,B,Mandalay,Normal,Female,Electronic accessories,99.73
+172-42-8274,B,Mandalay,Normal,Female,Electronic accessories,38.27
+549-59-1358,A,Yangon,Member,Male,Sports and travel,88.63
+225-98-1496,C,Naypyitaw,Normal,Female,Fashion accessories,27.02
+636-98-3364,B,Mandalay,Member,Female,Electronic accessories,26.26
+607-76-6216,C,Naypyitaw,Member,Female,Fashion accessories,92.49
+725-54-0677,C,Naypyitaw,Member,Male,Health and beauty,85.6
+324-41-6833,C,Naypyitaw,Member,Female,Electronic accessories,30.2
+211-05-0490,C,Naypyitaw,Member,Female,Electronic accessories,51.92
+610-46-4100,A,Yangon,Normal,Male,Health and beauty,28.95
+651-96-5970,A,Yangon,Normal,Male,Fashion accessories,46.41
+733-33-4967,C,Naypyitaw,Normal,Male,Electronic accessories,20.85
+861-77-0145,C,Naypyitaw,Member,Male,Electronic accessories,81.97
+568-88-3448,A,Yangon,Normal,Male,Health and beauty,25.0
+777-82-7220,B,Mandalay,Member,Male,Home and lifestyle,30.12
+234-03-4040,B,Mandalay,Member,Female,Food and beverages,73.05
+468-99-7231,C,Naypyitaw,Normal,Female,Home and lifestyle,44.01
+631-41-3108,A,Yangon,Normal,Male,Home and lifestyle,46.33
+305-14-0245,B,Mandalay,Member,Female,Home and lifestyle,94.49
+175-54-2529,A,Yangon,Member,Male,Food and beverages,22.17
+302-15-2162,C,Naypyitaw,Member,Male,Health and beauty,46.53
+558-60-5016,A,Yangon,Normal,Female,Home and lifestyle,33.3
+228-96-1411,C,Naypyitaw,Member,Female,Food and beverages,98.7
+221-25-5073,A,Yangon,Normal,Female,Food and beverages,74.66
+759-29-9521,A,Yangon,Member,Female,Fashion accessories,48.96
+276-75-6884,A,Yangon,Normal,Female,Health and beauty,68.71
+586-25-0848,A,Yangon,Normal,Female,Sports and travel,12.34
+346-12-3257,B,Mandalay,Member,Male,Electronic accessories,19.24
+689-05-1884,A,Yangon,Member,Male,Health and beauty,48.63
+227-50-3718,A,Yangon,Normal,Male,Health and beauty,14.62
+256-08-8343,A,Yangon,Normal,Female,Home and lifestyle,56.53
+667-92-0055,A,Yangon,Member,Male,Health and beauty,99.83
+320-49-6392,C,Naypyitaw,Normal,Female,Electronic accessories,30.24
+829-49-1914,C,Naypyitaw,Member,Female,Food and beverages,78.31
+655-07-2265,A,Yangon,Normal,Male,Electronic accessories,78.31
+608-04-3797,B,Mandalay,Member,Female,Health and beauty,25.32
+148-82-2527,C,Naypyitaw,Member,Female,Home and lifestyle,12.12
+593-14-4239,B,Mandalay,Normal,Female,Home and lifestyle,95.46
+510-95-6347,B,Mandalay,Member,Female,Food and beverages,48.52
+730-50-9884,C,Naypyitaw,Normal,Female,Sports and travel,83.06
+895-66-0685,B,Mandalay,Member,Male,Food and beverages,18.08
+755-12-3214,C,Naypyitaw,Member,Female,Fashion accessories,44.22
+433-75-6987,B,Mandalay,Member,Female,Health and beauty,55.97
+848-42-2560,A,Yangon,Normal,Female,Fashion accessories,81.91
+291-32-1427,B,Mandalay,Member,Male,Fashion accessories,21.94
+371-85-5789,B,Mandalay,Normal,Male,Health and beauty,87.98
+733-01-9107,B,Mandalay,Normal,Male,Home and lifestyle,82.7
+102-77-2261,C,Naypyitaw,Member,Male,Health and beauty,65.31
+174-64-0215,B,Mandalay,Normal,Male,Sports and travel,69.74
+793-10-3222,B,Mandalay,Member,Female,Health and beauty,41.06
+783-09-1637,B,Mandalay,Normal,Female,Sports and travel,67.43
+468-01-2051,B,Mandalay,Normal,Male,Food and beverages,62.08
+715-20-1673,B,Mandalay,Normal,Male,Electronic accessories,28.38
+149-15-7606,B,Mandalay,Member,Male,Sports and travel,37.32
+883-69-1285,B,Mandalay,Member,Male,Fashion accessories,49.92
+254-31-0042,A,Yangon,Member,Male,Electronic accessories,21.5
+523-38-0215,C,Naypyitaw,Normal,Male,Home and lifestyle,37.0
+802-70-5316,A,Yangon,Member,Female,Sports and travel,92.13
+262-47-2794,B,Mandalay,Member,Male,Home and lifestyle,71.86
+199-75-8169,A,Yangon,Member,Male,Sports and travel,15.81
+885-17-6250,A,Yangon,Normal,Female,Health and beauty,79.74
+748-45-2862,A,Yangon,Member,Female,Home and lifestyle,28.31
+242-55-6721,B,Mandalay,Normal,Male,Home and lifestyle,16.16
+598-47-9715,C,Naypyitaw,Normal,Male,Electronic accessories,84.07
+307-85-2293,B,Mandalay,Normal,Male,Home and lifestyle,50.28
+399-69-4630,C,Naypyitaw,Normal,Male,Electronic accessories,22.21
+471-41-2823,C,Naypyitaw,Normal,Male,Food and beverages,99.79
+423-64-4619,A,Yangon,Member,Female,Health and beauty,15.55
+643-38-7867,A,Yangon,Normal,Male,Home and lifestyle,97.94
+821-07-3596,C,Naypyitaw,Normal,Female,Fashion accessories,16.45
+483-71-1164,C,Naypyitaw,Normal,Female,Health and beauty,81.3
+594-34-4444,A,Yangon,Normal,Male,Electronic accessories,97.16
+345-08-4992,A,Yangon,Normal,Male,Home and lifestyle,33.99
+574-57-9721,C,Naypyitaw,Normal,Male,Food and beverages,43.27
+364-33-8584,B,Mandalay,Member,Female,Food and beverages,17.63
+458-41-1477,C,Naypyitaw,Normal,Female,Health and beauty,46.26
+549-96-4200,C,Naypyitaw,Member,Male,Food and beverages,17.04
+632-90-0281,C,Naypyitaw,Normal,Female,Fashion accessories,37.55
+226-31-3081,C,Naypyitaw,Normal,Female,Electronic accessories,15.28
+325-77-6186,A,Yangon,Member,Female,Home and lifestyle,90.65
+563-91-7120,A,Yangon,Normal,Female,Fashion accessories,61.77
+219-22-9386,B,Mandalay,Member,Male,Sports and travel,99.96
+277-35-5865,C,Naypyitaw,Member,Female,Food and beverages,98.97
+132-32-9879,B,Mandalay,Member,Female,Electronic accessories,93.96
+127-47-6963,A,Yangon,Normal,Male,Health and beauty,51.71
+268-27-6179,B,Mandalay,Member,Female,Fashion accessories,56.47
+841-35-6630,C,Naypyitaw,Normal,Female,Electronic accessories,75.91
+652-43-6591,A,Yangon,Normal,Female,Fashion accessories,97.29
+616-87-0016,B,Mandalay,Normal,Male,Fashion accessories,95.54
+299-29-0180,B,Mandalay,Member,Female,Home and lifestyle,52.18
+529-56-3974,B,Mandalay,Member,Male,Electronic accessories,25.51
+815-11-1168,A,Yangon,Member,Male,Food and beverages,99.78
+360-39-5055,C,Naypyitaw,Member,Male,Sports and travel,48.91
+816-57-2053,A,Yangon,Normal,Male,Sports and travel,60.87
+308-47-4913,A,Yangon,Member,Female,Sports and travel,52.26
+157-13-5295,A,Yangon,Member,Male,Health and beauty,51.94
+489-64-4354,C,Naypyitaw,Normal,Male,Fashion accessories,16.28
+668-90-8900,A,Yangon,Normal,Female,Home and lifestyle,93.69
+607-65-2441,C,Naypyitaw,Member,Male,Health and beauty,81.95
+790-29-1172,B,Mandalay,Normal,Female,Food and beverages,57.34
+596-42-3999,B,Mandalay,Normal,Male,Food and beverages,18.22
+696-90-2548,A,Yangon,Normal,Male,Sports and travel,25.84
+239-48-4278,A,Yangon,Member,Male,Food and beverages,10.13
+453-12-7053,C,Naypyitaw,Normal,Male,Fashion accessories,45.74
+246-55-6923,C,Naypyitaw,Member,Female,Home and lifestyle,35.79
+745-74-0715,A,Yangon,Normal,Male,Electronic accessories,58.03
+129-29-8530,A,Yangon,Member,Male,Sports and travel,62.62
+189-17-4241,A,Yangon,Normal,Female,Fashion accessories,87.67
+156-20-0370,B,Mandalay,Normal,Female,Electronic accessories,25.45
+689-16-9784,C,Naypyitaw,Normal,Male,Food and beverages,46.77
+721-86-6247,A,Yangon,Normal,Female,Home and lifestyle,63.42
+584-86-7256,C,Naypyitaw,Member,Male,Sports and travel,34.56
+892-05-6689,A,Yangon,Normal,Female,Home and lifestyle,28.32
+214-30-2776,B,Mandalay,Member,Female,Electronic accessories,34.49
+656-95-9349,A,Yangon,Member,Female,Health and beauty,68.93
+319-50-3348,B,Mandalay,Normal,Female,Home and lifestyle,40.3
+448-81-5016,A,Yangon,Normal,Male,Health and beauty,59.77
+749-81-8133,A,Yangon,Normal,Female,Fashion accessories,94.67
+891-58-8335,B,Mandalay,Member,Female,Sports and travel,29.61
+704-20-4138,C,Naypyitaw,Member,Female,Health and beauty,29.67
+427-45-9297,B,Mandalay,Member,Female,Home and lifestyle,40.73
+253-12-6086,A,Yangon,Member,Female,Sports and travel,98.4
+565-17-3836,A,Yangon,Member,Female,Health and beauty,47.67
+152-08-9985,B,Mandalay,Member,Male,Health and beauty,64.36
+719-76-3868,C,Naypyitaw,Member,Male,Food and beverages,94.26
+266-20-6657,C,Naypyitaw,Member,Male,Food and beverages,55.04
+545-46-3100,B,Mandalay,Member,Female,Electronic accessories,10.59
+573-10-3877,B,Mandalay,Member,Male,Health and beauty,39.01
+699-01-4164,C,Naypyitaw,Normal,Male,Health and beauty,41.5
+651-61-0874,C,Naypyitaw,Normal,Male,Home and lifestyle,46.22
+120-06-4233,C,Naypyitaw,Normal,Male,Electronic accessories,30.61
+276-54-0879,B,Mandalay,Normal,Male,Sports and travel,97.74
+655-85-5130,B,Mandalay,Member,Female,Fashion accessories,38.3
+173-57-2300,C,Naypyitaw,Member,Male,Sports and travel,72.88
+316-01-3952,A,Yangon,Normal,Female,Food and beverages,54.27
+101-17-6199,A,Yangon,Normal,Male,Food and beverages,45.79
+336-78-2147,C,Naypyitaw,Member,Male,Home and lifestyle,63.91
+877-22-3308,A,Yangon,Member,Male,Health and beauty,15.87
+137-74-8729,C,Naypyitaw,Normal,Female,Fashion accessories,12.19
+686-41-0932,B,Mandalay,Normal,Female,Fashion accessories,34.7
+585-03-5943,B,Mandalay,Normal,Male,Health and beauty,18.11
+584-66-4073,C,Naypyitaw,Normal,Male,Fashion accessories,56.5
+442-48-3607,A,Yangon,Member,Male,Food and beverages,23.48
+722-13-2115,C,Naypyitaw,Member,Male,Sports and travel,42.85
+808-65-0703,C,Naypyitaw,Normal,Male,Home and lifestyle,35.47
+139-32-4183,A,Yangon,Member,Female,Sports and travel,97.48
+115-99-4379,B,Mandalay,Member,Female,Fashion accessories,54.73
+189-52-0236,A,Yangon,Normal,Male,Electronic accessories,99.55
+730-70-9830,C,Naypyitaw,Normal,Female,Home and lifestyle,70.11
+457-12-0244,C,Naypyitaw,Member,Female,Sports and travel,35.22
+558-80-4082,C,Naypyitaw,Normal,Male,Electronic accessories,27.85
+122-61-9553,C,Naypyitaw,Normal,Female,Electronic accessories,51.32
+379-17-6588,C,Naypyitaw,Normal,Male,Fashion accessories,59.61
+499-27-7781,B,Mandalay,Normal,Female,Food and beverages,53.21
+210-30-7976,B,Mandalay,Member,Female,Fashion accessories,22.32
+174-75-0888,B,Mandalay,Normal,Male,Electronic accessories,21.58
+169-52-4504,A,Yangon,Normal,Female,Electronic accessories,15.69
+840-19-2096,C,Naypyitaw,Member,Male,Electronic accessories,87.91
+628-90-8624,B,Mandalay,Member,Male,Health and beauty,82.58
+373-09-4567,C,Naypyitaw,Normal,Male,Food and beverages,77.56
+361-59-0574,B,Mandalay,Member,Male,Sports and travel,90.53
+542-41-0513,B,Mandalay,Member,Female,Electronic accessories,57.49
+359-94-5395,B,Mandalay,Normal,Male,Health and beauty,92.78
+848-62-7243,A,Yangon,Normal,Male,Health and beauty,24.89
+595-11-5460,A,Yangon,Normal,Male,Health and beauty,96.58
+510-09-5628,A,Yangon,Member,Female,Fashion accessories,19.66
+154-87-7367,C,Naypyitaw,Normal,Male,Home and lifestyle,65.26
+585-11-6748,B,Mandalay,Member,Male,Sports and travel,96.8
+605-83-1050,B,Mandalay,Normal,Male,Fashion accessories,27.18
+760-54-1821,B,Mandalay,Normal,Male,Home and lifestyle,13.59
+565-91-4567,B,Mandalay,Normal,Male,Health and beauty,10.75
+273-16-6619,B,Mandalay,Normal,Male,Home and lifestyle,33.2
+701-69-8742,B,Mandalay,Normal,Male,Sports and travel,34.37
+286-43-6208,C,Naypyitaw,Normal,Female,Food and beverages,87.8
+210-74-9613,C,Naypyitaw,Normal,Male,Fashion accessories,97.26
+575-30-8091,A,Yangon,Normal,Male,Sports and travel,72.5
+727-17-0390,A,Yangon,Normal,Female,Food and beverages,63.61
+578-80-7669,B,Mandalay,Normal,Male,Sports and travel,74.97
+711-31-1234,B,Mandalay,Normal,Female,Electronic accessories,95.64
+290-68-2984,A,Yangon,Normal,Male,Home and lifestyle,23.75
+617-15-4209,C,Naypyitaw,Member,Male,Health and beauty,15.37
+320-32-8842,C,Naypyitaw,Member,Female,Food and beverages,22.62
+642-30-6693,B,Mandalay,Normal,Female,Sports and travel,54.51
+220-68-6701,A,Yangon,Normal,Female,Home and lifestyle,77.47
+662-47-5456,C,Naypyitaw,Member,Male,Fashion accessories,35.19
+880-46-5796,A,Yangon,Member,Male,Sports and travel,76.92
+152-03-4217,B,Mandalay,Normal,Female,Home and lifestyle,11.28
+263-87-5680,C,Naypyitaw,Member,Female,Home and lifestyle,28.53
+256-58-3609,C,Naypyitaw,Member,Male,Fashion accessories,91.98
+776-68-1096,B,Mandalay,Normal,Male,Home and lifestyle,44.12
+413-20-6708,C,Naypyitaw,Member,Female,Fashion accessories,51.47
+485-30-8700,A,Yangon,Normal,Female,Sports and travel,33.26
+420-04-7590,B,Mandalay,Normal,Male,Home and lifestyle,99.7
+439-54-7422,A,Yangon,Normal,Female,Electronic accessories,51.19
+548-48-3156,A,Yangon,Member,Female,Food and beverages,83.34
+898-04-2717,A,Yangon,Normal,Male,Fashion accessories,76.4
+301-81-8610,B,Mandalay,Member,Male,Fashion accessories,25.42
+155-45-3814,C,Naypyitaw,Member,Female,Electronic accessories,88.55
+593-08-5916,A,Yangon,Normal,Female,Fashion accessories,15.5
+318-81-2368,C,Naypyitaw,Normal,Female,Electronic accessories,46.2
+574-22-5561,C,Naypyitaw,Member,Female,Fashion accessories,82.63
+751-69-0068,C,Naypyitaw,Normal,Male,Sports and travel,99.24
+737-88-5876,A,Yangon,Member,Male,Home and lifestyle,23.29
+850-41-9669,A,Yangon,Normal,Female,Electronic accessories,75.06
+701-23-5550,B,Mandalay,Member,Male,Home and lifestyle,38.81
+568-90-5112,C,Naypyitaw,Normal,Male,Health and beauty,66.14
+716-39-1409,B,Mandalay,Normal,Male,Health and beauty,30.35
+728-88-7867,C,Naypyitaw,Member,Female,Home and lifestyle,75.53
+462-78-5240,C,Naypyitaw,Normal,Female,Electronic accessories,26.61
+831-07-6050,A,Yangon,Normal,Male,Electronic accessories,32.71
+451-28-5717,C,Naypyitaw,Member,Female,Home and lifestyle,83.17
+632-32-4574,B,Mandalay,Normal,Male,Sports and travel,75.92
+514-37-2845,B,Mandalay,Normal,Male,Fashion accessories,99.25
+509-29-3912,A,Yangon,Member,Female,Sports and travel,38.72
+102-06-2002,C,Naypyitaw,Member,Male,Sports and travel,25.25
+760-90-2357,A,Yangon,Member,Male,Electronic accessories,74.51
+650-98-6268,B,Mandalay,Member,Female,Food and beverages,20.87
+436-54-4512,A,Yangon,Member,Female,Food and beverages,91.61
+537-72-0426,C,Naypyitaw,Member,Male,Fashion accessories,70.99
+142-63-6033,B,Mandalay,Normal,Male,Home and lifestyle,92.36
+182-88-2763,B,Mandalay,Member,Male,Food and beverages,79.91
+213-72-6612,A,Yangon,Normal,Male,Food and beverages,43.25
+574-31-8277,B,Mandalay,Member,Male,Fashion accessories,33.63
+805-86-0265,A,Yangon,Normal,Male,Home and lifestyle,93.96
+828-61-5674,A,Yangon,Member,Male,Sports and travel,44.02
+827-26-2100,A,Yangon,Member,Male,Home and lifestyle,33.84
+500-02-2261,C,Naypyitaw,Normal,Female,Food and beverages,57.29
+448-61-3783,A,Yangon,Normal,Female,Electronic accessories,90.02
+512-98-1403,A,Yangon,Member,Female,Electronic accessories,26.48
+527-09-6272,A,Yangon,Member,Female,Electronic accessories,28.45
+438-01-4015,B,Mandalay,Member,Female,Sports and travel,49.49
+616-24-2851,B,Mandalay,Member,Female,Fashion accessories,17.87
+630-74-5166,A,Yangon,Normal,Male,Sports and travel,62.13
+394-30-3170,B,Mandalay,Member,Female,Sports and travel,88.43
+886-18-2897,A,Yangon,Normal,Female,Food and beverages,56.56
+227-03-5010,A,Yangon,Member,Female,Home and lifestyle,52.59
+802-43-8934,A,Yangon,Normal,Male,Home and lifestyle,18.28
+674-56-6360,A,Yangon,Normal,Male,Electronic accessories,95.15
+554-53-3790,B,Mandalay,Normal,Male,Sports and travel,37.02
+472-15-9636,A,Yangon,Normal,Male,Home and lifestyle,50.93
+550-84-8664,A,Yangon,Normal,Male,Sports and travel,85.91
+865-92-6136,A,Yangon,Normal,Male,Food and beverages,52.75
+386-27-7606,C,Naypyitaw,Member,Female,Home and lifestyle,81.2
+608-96-3517,B,Mandalay,Member,Female,Fashion accessories,91.54
+856-22-8149,A,Yangon,Normal,Female,Home and lifestyle,25.29
+884-80-6021,A,Yangon,Member,Female,Electronic accessories,73.47
+474-33-8305,C,Naypyitaw,Member,Male,Fashion accessories,67.39
+795-49-7276,A,Yangon,Normal,Male,Fashion accessories,37.15
+407-63-8975,A,Yangon,Normal,Male,Food and beverages,73.88
+333-73-7901,C,Naypyitaw,Normal,Female,Health and beauty,54.92
+851-28-6367,A,Yangon,Member,Male,Sports and travel,15.5
+733-29-1227,C,Naypyitaw,Normal,Male,Home and lifestyle,55.61
+835-16-0096,C,Naypyitaw,Member,Male,Sports and travel,14.7
+468-88-0009,A,Yangon,Member,Male,Home and lifestyle,65.94
+725-67-2480,B,Mandalay,Member,Female,Fashion accessories,58.75
+538-22-0304,C,Naypyitaw,Normal,Male,Electronic accessories,64.95
+560-30-5617,B,Mandalay,Normal,Female,Sports and travel,24.77
+588-01-7461,C,Naypyitaw,Normal,Female,Food and beverages,33.98
+641-62-7288,B,Mandalay,Normal,Male,Home and lifestyle,99.92
+334-64-2006,A,Yangon,Member,Female,Home and lifestyle,70.32
+118-62-1812,C,Naypyitaw,Member,Female,Home and lifestyle,78.38
+851-98-3555,B,Mandalay,Normal,Female,Health and beauty,82.88
+593-95-4461,C,Naypyitaw,Member,Male,Home and lifestyle,74.86
+699-14-3026,C,Naypyitaw,Normal,Male,Electronic accessories,85.39
+282-35-2475,B,Mandalay,Normal,Female,Sports and travel,93.31
+134-75-2619,A,Yangon,Member,Male,Electronic accessories,19.32
+362-58-8315,C,Naypyitaw,Normal,Male,Fashion accessories,76.52
+605-03-2706,A,Yangon,Normal,Female,Health and beauty,15.8
+340-66-0321,A,Yangon,Member,Male,Electronic accessories,36.36
+366-43-6862,B,Mandalay,Normal,Male,Electronic accessories,52.89
+156-95-3964,A,Yangon,Normal,Female,Food and beverages,55.39
+110-05-6330,C,Naypyitaw,Normal,Female,Food and beverages,39.43
+859-97-6048,C,Naypyitaw,Member,Male,Electronic accessories,84.25
+449-27-2918,B,Mandalay,Member,Female,Sports and travel,39.12
+848-24-9445,C,Naypyitaw,Member,Male,Health and beauty,43.7
+595-94-9924,A,Yangon,Member,Female,Health and beauty,27.73
+487-79-6868,B,Mandalay,Member,Female,Home and lifestyle,12.29
+587-73-4862,A,Yangon,Member,Female,Health and beauty,10.69
+236-27-1144,C,Naypyitaw,Normal,Female,Food and beverages,16.31
+760-53-9233,A,Yangon,Member,Male,Fashion accessories,41.28
+163-56-7055,C,Naypyitaw,Member,Male,Fashion accessories,48.71
+411-77-0180,A,Yangon,Member,Male,Electronic accessories,72.2
+797-88-0493,A,Yangon,Normal,Female,Health and beauty,64.27
+807-34-3742,A,Yangon,Normal,Male,Fashion accessories,52.38
+734-91-1155,B,Mandalay,Normal,Female,Electronic accessories,45.71
+278-86-2735,A,Yangon,Normal,Female,Food and beverages,52.34
+423-57-2993,B,Mandalay,Normal,Male,Sports and travel,93.39
+176-64-7711,B,Mandalay,Normal,Male,Food and beverages,32.32
+794-32-2436,B,Mandalay,Member,Male,Electronic accessories,55.67
+106-35-6779,A,Yangon,Member,Male,Home and lifestyle,44.34
+633-44-8566,A,Yangon,Member,Male,Food and beverages,49.38
+186-71-5196,A,Yangon,Member,Female,Food and beverages,79.54
+313-66-9943,B,Mandalay,Member,Female,Food and beverages,29.15
+702-83-5291,C,Naypyitaw,Member,Male,Fashion accessories,99.82
+238-49-0436,A,Yangon,Normal,Male,Health and beauty,32.46
+212-62-1842,A,Yangon,Normal,Male,Food and beverages,58.26
+857-16-3520,A,Yangon,Member,Female,Fashion accessories,71.46
+531-80-1784,A,Yangon,Normal,Male,Electronic accessories,26.02
+573-58-9734,B,Mandalay,Normal,Female,Fashion accessories,30.37
+420-97-3340,A,Yangon,Normal,Female,Food and beverages,71.68
+470-32-9057,A,Yangon,Member,Male,Food and beverages,51.34
+633-09-3463,C,Naypyitaw,Normal,Female,Electronic accessories,47.65
+333-23-2632,A,Yangon,Member,Male,Health and beauty,10.08
+266-76-6436,C,Naypyitaw,Member,Female,Food and beverages,38.6
+544-32-5024,C,Naypyitaw,Member,Female,Food and beverages,49.79
+291-21-5991,B,Mandalay,Member,Male,Health and beauty,61.29
+186-79-9562,B,Mandalay,Normal,Male,Health and beauty,71.77
+218-59-9410,A,Yangon,Member,Female,Home and lifestyle,72.42
+267-62-7380,C,Naypyitaw,Member,Male,Electronic accessories,82.34
+829-34-3910,A,Yangon,Normal,Female,Health and beauty,71.38
+727-75-6477,C,Naypyitaw,Normal,Male,Electronic accessories,28.84
+425-85-2085,B,Mandalay,Member,Male,Health and beauty,54.86
+766-85-7061,B,Mandalay,Normal,Male,Health and beauty,87.87
+286-01-5402,A,Yangon,Normal,Female,Sports and travel,40.23
+131-15-8856,C,Naypyitaw,Member,Female,Food and beverages,72.52
+642-61-4706,B,Mandalay,Member,Male,Food and beverages,93.4
+731-59-7531,B,Mandalay,Member,Male,Health and beauty,72.57
+778-89-7974,C,Naypyitaw,Normal,Male,Health and beauty,70.21
+291-55-6563,A,Yangon,Member,Female,Home and lifestyle,34.42
+743-04-1105,B,Mandalay,Member,Male,Health and beauty,97.22
+115-38-7388,C,Naypyitaw,Member,Female,Fashion accessories,10.18
+364-34-2972,C,Naypyitaw,Member,Male,Electronic accessories,96.82
+361-85-2571,A,Yangon,Normal,Female,Sports and travel,89.48
+676-39-6028,A,Yangon,Member,Female,Electronic accessories,64.44
