@@ -46,4 +46,3 @@ def run_sql_script(database: str, script_path: Path) -> pd.DataFrame:
 database = 'supermarket'
 script_path = Path('src/tools/merge_query.sql')
 df = run_sql_script(database, script_path)
-print(df.head())
