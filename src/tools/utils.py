@@ -134,6 +134,30 @@ def create_db_schema(df: pd.DataFrame) -> Tuple[str, str]:
     
     return col_type, values
 
+# Define a function to Authenticate AWS and set up an S3 client
+def authenticate_s3(access_key_id: str, secret_access_key: str, region: str) -> boto3.client:
+    """
+    Authenticate AWS and set up an S3 client.
+
+    :access_key_id: The Access Key ID for your AWS account.
+    :secret_access_key: The Secret Access Key for your AWS account.
+    :region: The AWS region where your S3 bucket is located.
+    
+    :return: An S3 client object that you can use to interact with your S3 bucket.
+    """
+    # Set the AWS credentials
+    session = boto3.Session(
+        aws_key_id=access_key_id,
+        aws_secret_access_key=secret_access_key,
+        region_name=region
+    )
+
+    # Create an S3 client
+    s3 = session.client('s3')
+
+    # Return the S3 client
+    return s3
+
 # Define a function to Upload a file to an S3 bucket
 def upload_to_s3(file_path: str, bucket_name: str, object_name: Optional[str] = None) -> bool:
     """
