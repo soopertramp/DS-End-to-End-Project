@@ -1,4 +1,4 @@
-CREATE TABLE merged_table AS SELECT tb1.invoice_id,
+CREATE TEMPORARY TABLE merged_table AS SELECT tb1.invoice_id,
     tb1.branch,
     tb1.city,
     tb1.customer_type,
