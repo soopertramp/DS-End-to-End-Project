@@ -33,7 +33,7 @@ def run_sql_script(database: str, script_path: Path) -> pd.DataFrame:
     cursor.fetchall()
     
     # Read the result into a pandas dataframe
-    df = pd.read_sql(sql_script, db)
+    df = pd.read_sql("SELECT * FROM merged_table", db)
 
     # Commit the changes to the database
     db.commit()
