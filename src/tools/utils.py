@@ -133,3 +133,78 @@ def create_db_schema(df: pd.DataFrame) -> Tuple[str, str]:
     values = ', '.join(['%s' for _ in range(len(df.columns))])
     
     return col_type, values
+
+# Define a function to Authenticate AWS and set up an S3 client
+def authenticate_s3(access_key_id: str, secret_access_key: str, region: str) -> boto3.client:
+    """
+    Authenticate AWS and set up an S3 client.
+
+    :access_key_id: The Access Key ID for your AWS account.
+    :secret_access_key: The Secret Access Key for your AWS account.
+    :region: The AWS region where your S3 bucket is located.
+    
+    :return: An S3 client object that you can use to interact with your S3 bucket.
+    """
+    # Set the AWS credentials
+    session = boto3.Session(
+        aws_key_id=access_key_id,
+        aws_secret_access_key=secret_access_key,
+        region_name=region
+    )
+
+    # Create an S3 client
+    s3 = session.client('s3')
+
+    # Return the S3 client
+    return s3
+
+# Define a function to Upload a file to an S3 bucket
+def upload_to_s3(file_path: str, bucket_name: str, object_name: Optional[str] = None) -> bool:
+    """
+    Upload a file to an S3 bucket
+
+    :file_path: File to upload
+    :bucket_name: Bucket to upload to
+    :object_name: S3 object name. If not specified then file_name is used
+    
+    :return: True if file was uploaded, else False
+    """
+    # Create an S3 client
+    s3_client = boto3.client('s3')
+
+    # If S3 object_name was not specified, use file_name
+    if object_name is None:
+        object_name = file_path
+
+    # Upload the file
+    try:
+        response = s3_client.upload_file(file_path, bucket_name, object_name)
+    except Exception as e:
+        print(e)
+        return False
+    return True
+
+# Define a function to read a file from an S3 bucket and return its contents as a dataframe
+def read_file_from_s3(bucket_name: str, file_name: str) -> pd.DataFrame:
+    """
+    Read a file from an S3 bucket and return its contents as a pandas dataframe
+    
+    :bucket_name: The name of the S3 bucket
+    :file_name: The name of the file to read
+    
+    :return: The contents of the file as a pandas dataframe, or None if the file could not be read
+    """
+    # Create an S3 client
+    s3_client = boto3.client('s3')
+
+    # Read the file
+    try:
+        response = s3_client.get_object(Bucket=bucket_name, Key=file_name)
+        df = pd.read_csv(response['Body'])
+    except Exception as e:
+        # If an exception occurs during the read process, print the error message and return None
+        print(e)
+        return None
+    
+    # Return the dataframe
+    return df
