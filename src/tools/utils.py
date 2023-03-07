@@ -1,7 +1,7 @@
 # import necessary libraries
 import os
 import pandas as pd
-from typing import List, Tuple, Union, Optional
+from typing import List, Tuple, Optional
 import mysql.connector as mysql
 import boto3
 import gspread
