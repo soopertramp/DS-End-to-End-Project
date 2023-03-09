@@ -20,3 +20,10 @@ cleaned-upload-to-database:
         dirpath: ./data/
         file_extension: csv 
         prefix_filename: table3
+
+sql_python:
+  export:
+    - export:
+        host: s3
+        bucket: end2enddsproject
+        filename: process_
