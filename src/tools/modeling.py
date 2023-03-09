@@ -7,18 +7,8 @@ from prophet import Prophet
 
 authenticate_s3()
 
-# Upload the file to S3 bucket
-data = upload_to_s3('data\supermarket_sales.csv', 'supermarket_sales_uncleaned.csv')
-data = upload_to_s3('data/table1.csv', 'cleaned_1.csv')
-data = upload_to_s3('data/table2.csv', 'cleaned_2.csv')
-data = upload_to_s3('data/table3.csv', 'cleaned_3.csv')
-
 # Read the file from S3 bucket into a pandas DataFrame
-df_1 = read_file_from_s3(file_name = 'cleaned_1.csv')
-df_2 = read_file_from_s3(file_name = 'cleaned_2.csv')
-
-# Concatenate two dataframes
-df = pd.merge(df_1, df_2, on = 'invoice_id', how = 'left')
+df = read_file_from_s3(file_name = 'supermarket_sales_cleaned.csv')
 
 # Filter the DataFrame based on specific conditions
 filter = df[(df['city'] == 'Yangon') & (df['product_line'] == 'Food and beverages')]
@@ -77,11 +67,7 @@ def predict_sales(city: str, product_line: str) -> pd.DataFrame:
         - yhat_upper: A float representing the upper bound of the predicted sales value.
     """
     # Read the file from S3 bucket into a pandas DataFrame
-    df_1 = read_file_from_s3(file_name = 'cleaned_1.csv')
-    df_2 = read_file_from_s3(file_name = 'cleaned_2.csv')
-
-    # Concatenate two dataframes
-    df = pd.merge(df_1, df_2, on = 'invoice_id', how = 'left')
+    df = read_file_from_s3(file_name = 'supermarket_sales_cleaned.csv')
 
     # Filter the DataFrame based on specific conditions
     filter = df[(df['city'] == city) & (df['product_line'] == product_line)]

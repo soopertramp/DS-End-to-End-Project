@@ -8,6 +8,8 @@ import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 from pathlib import Path
 from dotenv import load_dotenv
+from googleapiclient.discovery import build
+from io import StringIO
 
 # Define a function that connects to a MySQL server and creates a cursor object.
 def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connection.MySQLConnection, mysql.cursor.MySQLCursor]:
@@ -150,25 +152,19 @@ def authenticate_s3() -> Tuple[boto3.client, str]:
     
     :return: A tuple containing an S3 client object and the bucket name that you can use to interact with your S3 bucket.
     """
-    # Set the AWS credentials
-    session = boto3.Session(
-        aws_access_key_id=os.getenv('access_key_id'),
-        aws_secret_access_key=os.getenv('secret_access_key'),
-        region_name=os.getenv('region')
-    )
-
-    # Create an S3 client
-    s3 = session.client('s3')
-
     env_path = Path('.env')
     load_dotenv(env_path)
+    client = boto3.client('s3', aws_access_key_id=os.getenv('access_key_id'), 
+                          aws_secret_access_key=os.getenv('secret_access_key'), 
+                          region_name=os.getenv('region'))
+
     bucket_name = os.getenv('bucket_name')
     
     # Return the S3 client and bucket name as a tuple
-    return s3, bucket_name
+    return client, bucket_name
 
 # Define a function to Upload a file to an S3 bucket
-def upload_to_s3(file_path: str, object_name: Optional[str] = None) -> bool:
+def upload_to_s3(df: pd.DataFrame, filename: str) -> bool:
     """
     Upload a file to an S3 bucket
 
@@ -178,15 +174,18 @@ def upload_to_s3(file_path: str, object_name: Optional[str] = None) -> bool:
     :return: True if file was uploaded, else False
     """
     # Authenticate with AWS
-    s3, bucket_name = authenticate_s3()
-
-    # If S3 object_name was not specified, use file_name
-    if object_name is None:
-        object_name = os.path.basename(file_path)
+    client, bucket_name = authenticate_s3()
 
     # Upload the file
     try:
-        response = s3.upload_file(file_path, bucket_name, object_name)
+        csv_buffer = StringIO()
+        df.to_csv(csv_buffer, index=False)
+        response = client.put_object(
+            ACL = 'private',
+            Body=csv_buffer.getvalue(),
+            Bucket = bucket_name,
+            Key=filename + '.csv'
+        )
     except Exception as e:
         print(e)
         return False
@@ -218,7 +217,7 @@ def read_file_from_s3(file_name: str) -> pd.DataFrame:
     return df
 
 # Define a function to Upload a file to a Google Sheet
-def upload_to_google_sheet(file_path: str, sheet_name: str) -> bool:
+def upload_to_google_sheet(spreedsheetId: str, df: pd.DataFrame, clear_sheet: bool) -> bool:
     """
     Upload a file to a Google Sheet
 
@@ -239,16 +238,21 @@ def upload_to_google_sheet(file_path: str, sheet_name: str) -> bool:
     creds = ServiceAccountCredentials.from_json_keyfile_name("GCP.json", SCOPES)
     client = gspread.authorize(creds)
     
-    # Load the data from the file
-    df = pd.read_csv(file_path)
+    service = build("sheets", "v4", credentials=creds)
+
     df.fillna("", inplace=True)
-
-    # Write the data to the worksheet
-    try:
-        worksheet = client.open(sheet_name).add_worksheet(title=sheet_name, rows=len(df), cols=len(df.columns))
-        worksheet.update([df.columns.values.tolist()] + df.values.tolist())
-    except Exception as e:
-        print(e)
-        return False
-
-    return True
+    if clear_sheet:
+        service.spreadsheets().values().clear(
+            spreadsheetId=spreedsheetId,
+            range="A1:AA1000000",
+        ).execute()
+    else:
+        service.spreadsheets().values().update(
+            spreadsheetId=spreedsheetId,
+            valueInputOption="USER_ENTERED",
+            range="A1:AA1000000",
+            body=dict(
+                majorDimension="ROWS",
+                values=df.T.reset_index().T.values.tolist()
+            ),
+            ).execute()
