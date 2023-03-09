@@ -33,8 +33,6 @@ if args.create_db:
     print(databases)
 else:
     # define variables
-    #args_id = 'cleaned-upload-to-database'
-    #args_name_the_db = 'cleaned_supermarket'
     config_import = config[args.task_id]["import"]
     for i in range(len(config_import)):
         data = Path(config_import[i]["import"]["dirpath"], 
