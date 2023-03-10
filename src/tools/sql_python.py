@@ -1,19 +1,24 @@
+from pathlib import Path
+
 import mysql.connector as mysql
 import pandas as pd
-from pathlib import Path
-from src.tools.utils import authenticate_s3
-from src.tools.utils import upload_to_s3
+
+from src.tools.utils import authenticate_s3, upload_to_s3
 
 auth,buck = authenticate_s3()
 
 def run_sql_script(database: str, script_path: Path) -> pd.DataFrame:
     """Runs an SQL script and returns the result as a pandas DataFrame.
 
-    Args:
-        database (str): Name of the database to connect to.
-        script_path (Path): Path to the SQL script file.
+    Parameters:
+    -----------
+        database: str
+            Name of the database to connect to.
+        script_path: Path
+            Path to the SQL script file.
 
     Returns:
+    --------
         pd.DataFrame: Result of the SQL script as a pandas DataFrame.
 
     """
@@ -44,7 +49,14 @@ def run_sql_script(database: str, script_path: Path) -> pd.DataFrame:
 
     return df
 
-def process():
+def process() -> pd.DataFrame:
+    """
+    Runs an SQL script that merges data from multiple tables in a database, and returns the result as a pandas DataFrame.
+
+    Returns:
+    --------
+        pd.DataFrame: A pandas DataFrame containing the merged data.
+    """
     database = 'cleaned_supermarket'
     script_path = Path('src/tools/merge_query.sql')
     df = run_sql_script(database, script_path)
