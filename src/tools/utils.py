@@ -1,15 +1,16 @@
 # import necessary libraries
 import os
-import pandas as pd
-from typing import List, Tuple, Optional
-import mysql.connector as mysql
+from io import StringIO
+from pathlib import Path
+from typing import List, Optional, Tuple
+
 import boto3
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-from pathlib import Path
+import mysql.connector as mysql
+import pandas as pd
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
-from io import StringIO
+from oauth2client.service_account import ServiceAccountCredentials
 
 # Define a function that connects to a MySQL server and creates a cursor object.
 def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connection.MySQLConnection, mysql.cursor.MySQLCursor]:
@@ -17,12 +18,16 @@ def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connect
     Connects to a MySQL server with the given hostname, username, and password.
 
     Args:
-        host (str): The hostname of the MySQL server to connect to.
-        user (str): The username to use when connecting to the server.
-        password (str): The password to use when connecting to the server.
+        host: str 
+            The hostname of the MySQL server to connect to.
+        user: str 
+            The username to use when connecting to the server.
+        password: str
+            The password to use when connecting to the server.
 
     Returns:
-        A tuple containing two objects: the connection to the MySQL server and a cursor object.
+        Tuple[mysql.connection.MySQLConnection, mysql.cursor.MySQLCursor]
+            A tuple containing two objects: the connection to the MySQL server and a cursor object.
         The cursor can be used to execute SQL statements and retrieve results from the server.
 
     Raises:
@@ -49,12 +54,16 @@ def create_database(cursor: mysql.cursor.MySQLCursor, database_name: str) -> Lis
     """
     Creates a new MySQL database with the given name.
 
-    Args:
-        cursor (cursor): The cursor object to use to execute SQL statements.
-        database_name (str): The name of the new database to create.
+    Parameters:
+    -----------
+    cursor : mysql.cursor.MySQLCursor
+        The cursor object to use to execute SQL statements.
+    database_name : str
+        The name of the new database to create.
 
     Returns:
-        None
+    --------
+    None
     """
     # Drop the database if it already exists
     drop_db_query = f'DROP DATABASE IF EXISTS {database_name}'
@@ -72,16 +81,22 @@ def create_database(cursor: mysql.cursor.MySQLCursor, database_name: str) -> Lis
 # Define a function that creates a new MySQL table.        
 def create_table(database_name: str, table_name: str, col_type: str, cursor: mysql.cursor.MySQLCursor):
     """
-    Creates a new MySQL table with the given name, using the specified column names and data types.
+    Create a new MySQL table with the given name, using the specified column names and data types.
 
-    Args:
-        database_name (str): The name of the database in which to create the new table.
-        table_name (str): The name of the new table to create.
-        col_type (str): A string specifying the column names and data types for the new table.
-        cursor (mysql.cursor.MySQLCursor): The cursor object to use to execute SQL statements.
+    Parameters
+    ----------
+    database_name : str
+        The name of the database in which to create the new table.
+    table_name : str
+        The name of the new table to create.
+    col_type : str
+        A string specifying the column names and data types for the new table.
+    cursor : mysql.cursor.MySQLCursor
+        The cursor object to use to execute SQL statements.
 
-    Returns:
-        None
+    Returns
+    -------
+    None
     """
     # Connect to the MySQL server and select the specified database
     cursor.execute(f'USE {database_name}')
@@ -97,11 +112,15 @@ def get_data(path: str) -> pd.DataFrame:
     """
     Loads data from a CSV file into a pandas DataFrame.
 
-    Args:
-        path (str): The path to the CSV file to be loaded.
+    Parameters
+    ----------
+    path : str
+        The path to the CSV file to be loaded.
 
-    Returns:
-        pd.DataFrame: A pandas DataFrame
+    Returns
+    -------
+    pd.DataFrame
+        A pandas DataFrame containing the data from the CSV file.
     """
     # Load data from CSV file
     df = pd.read_csv(path)
@@ -115,12 +134,16 @@ def create_db_schema(df: pd.DataFrame) -> Tuple[str, str]:
     Given a pandas DataFrame `data`, this function returns a tuple of two strings representing 
     the SQL schema and placeholder values for a table in a relational database.
 
-    Args:
-    - data (pd.DataFrame): The input pandas DataFrame.
+    Parameters:
+    -----------
+    df : pandas.DataFrame
+        The pandas DataFrame to upload.
 
     Returns:
+    --------
     - Tuple[str, str]: A tuple of two strings, the first one represents the SQL schema, and the 
-    second one represents the placeholder values for the table. """
+    second one represents the placeholder values for the table. 
+    """
     # Determine the SQL data type for each column in the DataFrame
     types = []
     for i in df.dtypes:
@@ -144,13 +167,20 @@ def create_db_schema(df: pd.DataFrame) -> Tuple[str, str]:
 # Define a function to Authenticate AWS and set up an S3 client
 def authenticate_s3() -> Tuple[boto3.client, str]:
     """
-    Authenticate AWS and set up an S3 client.
+    Authenticates with AWS and sets up an S3 client using environment variables.
 
-    :access_key_id: The Access Key ID for your AWS account.
-    :secret_access_key: The Secret Access Key for your AWS account.
-    :region: The AWS region where your S3 bucket is located.
-    
-    :return: A tuple containing an S3 client object and the bucket name that you can use to interact with your S3 bucket.
+    Returns:
+    --------
+    tuple
+        A tuple containing an S3 client object and the bucket name that can be used to interact with an S3 bucket.
+
+    Notes:
+    ------
+    This function requires AWS credentials to be stored in a file named '.env' in the same directory as this script. The '.env' file should contain the following variables:
+    - access_key_id: The Access Key ID for your AWS account.
+    - secret_access_key: The Secret Access Key for your AWS account.
+    - region: The AWS region where your S3 bucket is located.
+    - bucket_name: The name of the S3 bucket that you want to interact with.
     """
     env_path = Path('.env')
     load_dotenv(env_path)
@@ -166,12 +196,20 @@ def authenticate_s3() -> Tuple[boto3.client, str]:
 # Define a function to Upload a file to an S3 bucket
 def upload_to_s3(df: pd.DataFrame, filename: str) -> bool:
     """
-    Upload a file to an S3 bucket
+    Uploads a pandas DataFrame to an S3 bucket.
 
-    :file_path: File to upload
-    :object_name: S3 object name. If not specified then file_name is used
-    
-    :return: True if file was uploaded, else False
+    Parameters:
+    -----------
+    df : pandas.DataFrame
+        The pandas DataFrame to upload.
+
+    filename : str
+        The name to give to the uploaded file. This should not include the file extension.
+
+    Returns:
+    --------
+    bool
+        True if the DataFrame was successfully uploaded, False otherwise.
     """
     # Authenticate with AWS
     client, bucket_name = authenticate_s3()
@@ -194,12 +232,22 @@ def upload_to_s3(df: pd.DataFrame, filename: str) -> bool:
 # Define a function to read a file from an S3 bucket and return its contents as a dataframe
 def read_file_from_s3(file_name: str) -> pd.DataFrame:
     """
-    Read a file from an S3 bucket and return its contents as a pandas dataframe
-    
-    :bucket_name: The name of the S3 bucket
-    :file_name: The name of the file to read
-    
-    :return: The contents of the file as a pandas dataframe, or None if the file could not be read
+    Read a file from an Amazon S3 bucket and return its contents as a pandas DataFrame.
+
+    Parameters:
+    -----------
+    file_name : str
+        The name of the file to read from the S3 bucket.
+
+    Returns:
+    --------
+    df : pandas.DataFrame or None
+        The contents of the file as a pandas DataFrame, or None if the file could not be read.
+
+    Raises:
+    -------
+    Exception
+        If an error occurs during the read process.
     """
     # Authenticate with AWS
     s3, bucket_name = authenticate_s3()
@@ -215,16 +263,28 @@ def read_file_from_s3(file_name: str) -> pd.DataFrame:
     
     # Return the dataframe
     return df
-
+      
 # Define a function to Upload a file to a Google Sheet
-def upload_to_google_sheet(spreedsheetId: str, df: pd.DataFrame, clear_sheet: bool) -> bool:
+def upload_to_google_sheet(spreadsheet_id: str, df: pd.DataFrame, worksheet_name: str) -> bool:
     """
-    Upload a file to a Google Sheet
+    Uploads a pandas DataFrame to a Google Sheet.
 
-    :file_path: File to upload
-    :sheet_name: Name of the Google Sheet to upload the file to
+    Parameters:
+    -----------
+    spreadsheet_id : str
+        The ID of the Google Sheet to upload the DataFrame to.
 
-    :return: True if file was uploaded, else False
+    df : pandas.DataFrame
+        The pandas DataFrame to upload.
+
+    worksheet_name : str
+        The name of the worksheet within the Google Sheet to upload the DataFrame to.
+
+    Returns:
+    --------
+    bool
+        True if the DataFrame was successfully uploaded, False otherwise.
+
     """
     # Authenticate with Google Sheets API
     
@@ -235,24 +295,24 @@ def upload_to_google_sheet(spreedsheetId: str, df: pd.DataFrame, clear_sheet: bo
         "https://www.googleapis.com/auth/drive"
     ]
     
-    creds = ServiceAccountCredentials.from_json_keyfile_name("GCP.json", SCOPES)
-    client = gspread.authorize(creds)
-    
-    service = build("sheets", "v4", credentials=creds)
+    credentials = ServiceAccountCredentials.from_json_keyfile_name("GCP.json", SCOPES)
+    gc = gspread.authorize(credentials)
 
-    df.fillna("", inplace=True)
-    if clear_sheet:
-        service.spreadsheets().values().clear(
-            spreadsheetId=spreedsheetId,
-            range="A1:AA1000000",
-        ).execute()
+    # Open the worksheet
+    try:
+        worksheet = gc.open_by_key(spreadsheet_id).worksheet(worksheet_name)
+    except gspread.exceptions.WorksheetNotFound:
+        worksheet = gc.open_by_key(spreadsheet_id).add_worksheet(worksheet_name, 1, 1)
+
+    # Clear the existing content in the worksheet
+    worksheet.clear()
+
+    # Convert Timestamp columns to string format
+    df = df.astype(str)
+
+    # Write the DataFrame to the worksheet
+    cell_list = worksheet.update([df.columns.values.tolist()] + df.values.tolist())
+    if cell_list:
+        return True
     else:
-        service.spreadsheets().values().update(
-            spreadsheetId=spreedsheetId,
-            valueInputOption="USER_ENTERED",
-            range="A1:AA1000000",
-            body=dict(
-                majorDimension="ROWS",
-                values=df.T.reset_index().T.values.tolist()
-            ),
-            ).execute()
+        return False

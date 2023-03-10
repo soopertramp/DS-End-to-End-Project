@@ -1,9 +1,8 @@
-from src.tools.utils import authenticate_s3
-from src.tools.utils import upload_to_s3
-from src.tools.utils import read_file_from_s3
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
 from prophet import Prophet
+
+from src.tools.utils import authenticate_s3, read_file_from_s3, upload_to_s3
 
 authenticate_s3()
 
