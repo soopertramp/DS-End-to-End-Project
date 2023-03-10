@@ -1,15 +1,16 @@
 # import necessary libraries
 import os
-import pandas as pd
-from typing import List, Tuple, Optional
-import mysql.connector as mysql
+from io import StringIO
+from pathlib import Path
+from typing import List, Optional, Tuple
+
 import boto3
 import gspread
-from oauth2client.service_account import ServiceAccountCredentials
-from pathlib import Path
+import mysql.connector as mysql
+import pandas as pd
 from dotenv import load_dotenv
 from googleapiclient.discovery import build
-from io import StringIO
+from oauth2client.service_account import ServiceAccountCredentials
 
 # Define a function that connects to a MySQL server and creates a cursor object.
 def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connection.MySQLConnection, mysql.cursor.MySQLCursor]:
@@ -168,10 +169,10 @@ def upload_to_s3(df: pd.DataFrame, filename: str) -> bool:
     """
     Upload a file to an S3 bucket
 
-    :file_path: File to upload
-    :object_name: S3 object name. If not specified then file_name is used
+    :df: Pandas DataFrame to upload
+    :filename: Name to give to the uploaded file
     
-    :return: True if file was uploaded, else False
+    :return: True if file was uploaded successfully, else False
     """
     # Authenticate with AWS
     client, bucket_name = authenticate_s3()
@@ -215,9 +216,9 @@ def read_file_from_s3(file_name: str) -> pd.DataFrame:
     
     # Return the dataframe
     return df
-
+      
 # Define a function to Upload a file to a Google Sheet
-def upload_to_google_sheet(spreedsheetId: str, df: pd.DataFrame, clear_sheet: bool) -> bool:
+def upload_to_google_sheet(spreadsheet_id: str, df: pd.DataFrame, worksheet_name: str) -> bool:
     """
     Upload a file to a Google Sheet
 
@@ -235,24 +236,24 @@ def upload_to_google_sheet(spreedsheetId: str, df: pd.DataFrame, clear_sheet: bo
         "https://www.googleapis.com/auth/drive"
     ]
     
-    creds = ServiceAccountCredentials.from_json_keyfile_name("GCP.json", SCOPES)
-    client = gspread.authorize(creds)
-    
-    service = build("sheets", "v4", credentials=creds)
+    credentials = ServiceAccountCredentials.from_json_keyfile_name("GCP.json", SCOPES)
+    gc = gspread.authorize(credentials)
 
-    df.fillna("", inplace=True)
-    if clear_sheet:
-        service.spreadsheets().values().clear(
-            spreadsheetId=spreedsheetId,
-            range="A1:AA1000000",
-        ).execute()
+    # Open the worksheet
+    try:
+        worksheet = gc.open_by_key(spreadsheet_id).worksheet(worksheet_name)
+    except gspread.exceptions.WorksheetNotFound:
+        worksheet = gc.open_by_key(spreadsheet_id).add_worksheet(worksheet_name, 1, 1)
+
+    # Clear the existing content in the worksheet
+    worksheet.clear()
+
+    # Convert Timestamp columns to string format
+    df = df.astype(str)
+
+    # Write the DataFrame to the worksheet
+    cell_list = worksheet.update([df.columns.values.tolist()] + df.values.tolist())
+    if cell_list:
+        return True
     else:
-        service.spreadsheets().values().update(
-            spreadsheetId=spreedsheetId,
-            valueInputOption="USER_ENTERED",
-            range="A1:AA1000000",
-            body=dict(
-                majorDimension="ROWS",
-                values=df.T.reset_index().T.values.tolist()
-            ),
-            ).execute()
+        return False
