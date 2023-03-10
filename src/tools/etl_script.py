@@ -1,6 +1,6 @@
 #import necessary libraries 
-import pandas as pd
 import matplotlib.pyplot as plt
+import pandas as pd
 
 #reading the data
 df = pd.read_csv('data/supermarket_sales.csv')
