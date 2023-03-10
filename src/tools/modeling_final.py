@@ -6,8 +6,7 @@ import pandas as pd
 from oauth2client.service_account import ServiceAccountCredentials
 from prophet import Prophet
 
-from src.tools.utils import read_file_from_s3
-from src.tools.utils import upload_to_google_sheet
+from src.tools.utils import read_file_from_s3, upload_to_google_sheet
 
 # Read the file from S3 bucket into a pandas DataFrame
 data = read_file_from_s3('supermarket_cleaned.csv')
