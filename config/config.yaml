@@ -1,0 +1,29 @@
+---
+upload-to-database:
+  import:
+    - import:
+        dirpath: ./data/
+        file_extension: csv 
+        prefix_filename: supermarket_sales
+
+cleaned-upload-to-database:
+  import:
+    - import:
+        dirpath: ./data/
+        file_extension: csv 
+        prefix_filename: table1
+    - import:
+        dirpath: ./data/
+        file_extension: csv 
+        prefix_filename: table2
+    - import:
+        dirpath: ./data/
+        file_extension: csv 
+        prefix_filename: table3
+
+sql_python:
+  export:
+    - export:
+        host: s3
+        bucket: end2enddsproject
+        filename: process_
