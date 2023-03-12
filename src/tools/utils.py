@@ -1,4 +1,5 @@
 # import necessary libraries
+import importlib
 import os
 from io import StringIO
 from pathlib import Path
@@ -12,12 +13,14 @@ from dotenv import load_dotenv
 from googleapiclient.discovery import build
 from oauth2client.service_account import ServiceAccountCredentials
 
+
 # Define a function that connects to a MySQL server and creates a cursor object.
 def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connection.MySQLConnection, mysql.cursor.MySQLCursor]:
     """
     Connects to a MySQL server with the given hostname, username, and password.
 
-    Args:
+    Parameters:
+    -----------
         host: str 
             The hostname of the MySQL server to connect to.
         user: str 
@@ -26,11 +29,13 @@ def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connect
             The password to use when connecting to the server.
 
     Returns:
+    --------
         Tuple[mysql.connection.MySQLConnection, mysql.cursor.MySQLCursor]
             A tuple containing two objects: the connection to the MySQL server and a cursor object.
         The cursor can be used to execute SQL statements and retrieve results from the server.
 
     Raises:
+    -------
         Exception: If an error occurs while connecting to the MySQL server.
     """
     try:
@@ -316,3 +321,13 @@ def upload_to_google_sheet(spreadsheet_id: str, df: pd.DataFrame, worksheet_name
         return True
     else:
         return False
+    
+def process_task(task: str) -> dict:
+    """Import task file to process the data from src/tools folder
+    Args:
+        task (str): name of the task to process
+    Returns:
+        dict: processed_data
+    """
+    lib = importlib.import_module(f"src.tools.{task}")
+    return lib.process()

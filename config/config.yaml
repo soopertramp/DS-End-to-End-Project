@@ -27,3 +27,11 @@ sql_python:
         host: s3
         bucket: end2enddsproject
         filename: process_
+
+predictions:
+  export:
+    - export:
+      host: gsheet
+      spread_sheet_id: 1d9qOwKAaOVdkyuubjCycIcPO_H7ASbUkk_tN75JF2go
+      df: predictions
+      worksheet_name: Sheet1
