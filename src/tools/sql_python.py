@@ -5,10 +5,6 @@ import mysql.connector as mysql
 import pandas as pd
 from dotenv import load_dotenv
 
-from src.tools.utils import authenticate_s3, upload_to_s3
-
-auth,buck = authenticate_s3()
-
 def run_sql_script(database: str, script_path: Path) -> pd.DataFrame:
     """Runs an SQL script and returns the result as a pandas DataFrame.
 

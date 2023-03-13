@@ -9,7 +9,7 @@ from prophet import Prophet
 from src.tools.utils import read_file_from_s3, upload_to_google_sheet
 
 # Read the file from S3 bucket into a pandas DataFrame
-data = read_file_from_s3('supermarket_cleaned.csv')
+data = read_file_from_s3('cleaned_supermarket.csv')
 
 def generate_forecasts(df: pd.DataFrame, cities: List[str], product_lines: List[str]) -> pd.DataFrame:
     """
@@ -79,4 +79,4 @@ def process():
     predictions = generate_forecasts(data, cities, product_lines)
     return predictions
 
-upload = upload_to_google_sheet('1d9qOwKAaOVdkyuubjCycIcPO_H7ASbUkk_tN75JF2go', predictions, 'Sheet1')
+upload = upload_to_google_sheet('1d9qOwKAaOVdkyuubjCycIcPO_H7ASbUkk_tN75JF2go', process(), 'Sheet1')

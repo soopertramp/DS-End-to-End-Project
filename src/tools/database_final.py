@@ -23,7 +23,7 @@ with open("./config/config.yaml", 'r') as f:
 #read mysql password
 env_path = Path('.env')
 load_dotenv(env_path)
-password = os.getenv('PASSWORD')
+password = os.getenv('password')
 
 # connect to mysql
 mydb, cursor = connect_to_mysql(host='localhost', user='root', password=password)
