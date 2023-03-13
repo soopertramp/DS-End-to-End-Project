@@ -84,7 +84,7 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 #### This step allows you to run SQL queries on the database and retrieve specific data based on your needs.
 
-#### STEP - :nine: : Run SQL queries on the database by running the code 
+#### STEP - :nine: : Run main.py with task parameter 
 
 ```python main.py -t sql_python``` 
 
