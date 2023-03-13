@@ -50,13 +50,13 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 #### STEP - :three: : Create the database by running the below code 
 
-```python src\tools\database_final.py -cd True -nd YourDatabaseName``` 
+```python src\tools\database_final.py -cd True -nd "YourDatabaseName"``` 
 
 #### This step creates the database with the specified name. The -cd argument specifies whether to create or drop the database, and -nd specifies the name of the database.
 
 #### STEP - :four: : Load the data into the database by running 
 
-```python src\tools\database_final.py -nd YourDatabaseName -id upload-to-database```
+```python src\tools\database_final.py -nd "YourDatabaseName" -id upload-to-database```
 
 #### This step loads the raw data into the database. The -nd argument specifies the name of the database, and -id specifies the operation to be performed (in this case, uploading data to the database).
 
@@ -68,13 +68,13 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 #### STEP - :six: : Create the cleaned database by running 
 
-```python src\tools\database_final.py -cd True -nd CleanedDatabaseName``` 
+```python src\tools\database_final.py -cd True -nd "CleanedDatabaseName"``` 
 
 #### This step creates a new database with the cleaned data.
 
 #### STEP - :seven: : Load the cleaned data into the database by running 
 
-```python src\tools\database_final.py -nd CleanedDatabaseName -id cleaned-upload-to-database``` 
+```python src\tools\database_final.py -nd "CleanedDatabaseName" -id cleaned-upload-to-database``` 
 
 #### This step loads the cleaned data into the database.
 
