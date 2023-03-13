@@ -5,15 +5,15 @@
 
   Pic Credits - [Microsoft](https://learn.microsoft.com/en-us/azure/architecture/data-science-process/lifecycle)
 
-## Introduction
+## :wave: Introduction
 
 This repository contains an end-to-end data science project that demonstrates the complete data science process from data collection to deployment. The project aims to provide insights into a real-world problem and solve it using data science techniques.
 
-## Project Description
+## :memo: Project Description
 
 The project is focused on forecasting quantity for a supermarket. The data used in this project has been collected from [data source]. The data has been cleaned, preprocessed and analyzed to obtain insights and to build a predictive model. The predictive model has been built using facebook's prophet algorithm. The model has then been deployed using Jenkins and Looker Studio, formerly Google Data Studio.
 
-## Requirements
+## :briefcase: :pencil: Requirements
 
 | library | Description |
 |---------| ----------- |
@@ -34,9 +34,9 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 `boto3`| A library for interacting with AWS services using Python.
 `googleapiclient.discovery`| A library for discovering and using Google APIs.
 
-## User Guide
+## :open_book: User Guide
 
-#### STEP - 1 : Navigate to the project directory in the terminal by running 
+#### STEP - :one: : Navigate to the project directory in the terminal by running 
 
 ```cd " YOUR FOLDER LOCATION "``` 
 
