@@ -34,9 +34,10 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 `boto3`| A library for interacting with AWS services using Python.
 `googleapiclient.discovery`| A library for discovering and using Google APIs.
 
-## 
+## User Guide
 
-Navigate to the project directory in the terminal by running cd Desktop\github_local\End2End\DS-End-to-End-Project: This step is necessary to ensure that you are in the correct directory where the project files are located.
+#### STEP - 1 : Navigate to the project directory in the terminal by running `cd Desktop\github_local\End2End\DS-End-to-End-Project`
+: This step is necessary to ensure that you are in the correct directory where the project files are located.
 
 Activate the project environment by running conda activate End2End: This step is necessary to activate the Conda environment that contains all the required libraries and dependencies for the project.
 
