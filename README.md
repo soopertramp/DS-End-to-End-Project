@@ -1,4 +1,4 @@
-# Data Science End2End Project
+# :man_technologist: Data Science End2End Project
 
 <p align="left">
     <img src="https://learn.microsoft.com/en-us/azure/architecture/data-science-process/media/lifecycle/tdsp-lifecycle2.png">
@@ -46,7 +46,7 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 ```conda activate End2End``` 
 
-#### This step is necessary to activate the Conda environment that contains all the required [libraries and dependencies](https://github.com/soopertramp/DS-End-to-End-Project#requirements) for the project.
+#### This step is necessary to activate the Conda environment that contains all the required [libraries and dependencies](https://github.com/soopertramp/DS-End-to-End-Project/blob/main/requirements.txt) for the project.
 
 #### STEP - 3 : Create the database by running the below code 
 
@@ -98,10 +98,10 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 ## Conclusion
 
-This project showcases the ability to handle real-world data and solve a problem using data science techniques. The project can be used as a reference for building similar projects in the future. Feel free to use the code and make modifications as per your requirements.
+This project showcases the ability to handle real-world data and solve a problem using data science techniques. The project can be used as a reference for building similar projects in the future. Feel free to use the code and make modifications as per your requirements and don't forget to give credit.
 
 ## Created and Contributed by
 
-[Pradeep](https://www.linkedin.com/in/pradeepchandra-reddy-s-c/)
+[Pradeepchandra Reddy S C](https://www.linkedin.com/in/pradeepchandra-reddy-s-c/)
 
-[The Data Science Show (Mitul Patel Msc - Mentor)](https://www.linkedin.com/in/mitul-patel2393/)
+[Data To Production (Mitul Patel Msc - Mentor)](https://www.linkedin.com/in/mitul-patel2393/)
