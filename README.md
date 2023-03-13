@@ -1,9 +1,6 @@
 # :man_technologist: Data Science End2End Project
 
-<p align="left">
-    <img src="https://learn.microsoft.com/en-us/azure/architecture/data-science-process/media/lifecycle/tdsp-lifecycle2.png">
-
-  Pic Credits - [Microsoft](https://learn.microsoft.com/en-us/azure/architecture/data-science-process/lifecycle)
+[embed]https://github.com/soopertramp/DS-End-to-End-Project/blob/main/End2End.pdf[/embed]
 
 ## :wave: Introduction
 
