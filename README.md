@@ -20,19 +20,19 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 |mysql-connector-python| A library that provides connectivity to MySQL databases.|
 |matplotlib| A plotting library for creating visualizations in Python|
 |pandas| A library for data manipulation and analysis.|
-python-dotenv: A library for working with environment variables stored in a .env file.
-pathlib: A library for working with file system paths.
-argparse: A library for parsing command line arguments.
-os: A library for interacting with the operating system.
-yaml: A library for parsing YAML files.
-typing: A library for supporting type hints in Python.
-gspread: A library for working with Google Sheets.
-oauth2client.service_account: A library for authenticating with Google APIs using a service account.
-prophet: A library for time series forecasting developed by Facebook.
-io: A library for working with I/O streams.
-importlib: A library for programmatically importing modules.
-boto3: A library for interacting with AWS services using Python.
-googleapiclient.discovery: A library for discovering and using Google APIs.
+python-dotenv| A library for working with environment variables stored in a .env file.
+pathlib| A library for working with file system paths.
+argparse| A library for parsing command line arguments.
+os| A library for interacting with the operating system.
+yaml| A library for parsing YAML files.
+typing| A library for supporting type hints in Python.
+gspread| A library for working with Google Sheets.
+oauth2client.service_account| A library for authenticating with Google APIs using a service account.
+prophet| A library for time series forecasting developed by Facebook.
+io| A library for working with I/O streams.
+importlib| A library for programmatically importing modules.
+boto3| A library for interacting with AWS services using Python.
+googleapiclient.discovery| A library for discovering and using Google APIs.
 
 ## 
 
