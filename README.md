@@ -42,55 +42,55 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 #### This step is necessary to ensure that you are in the correct directory where the project files are located.
 
-#### STEP - 2 : Activate the project environment by running 
+#### STEP - :two: : Activate the project environment by running 
 
 ```conda activate End2End``` 
 
 #### This step is necessary to activate the Conda environment that contains all the required [libraries and dependencies](https://github.com/soopertramp/DS-End-to-End-Project/blob/main/requirements.txt) for the project.
 
-#### STEP - 3 : Create the database by running the below code 
+#### STEP - :three: : Create the database by running the below code 
 
 ```python src\tools\database_final.py -cd True -nd YourDatabaseName``` 
 
 #### This step creates the database with the specified name. The -cd argument specifies whether to create or drop the database, and -nd specifies the name of the database.
 
-#### STEP - 4 : Load the data into the database by running 
+#### STEP - :four: : Load the data into the database by running 
 
 ```python src\tools\database_final.py -nd YourDatabaseName -id upload-to-database```
 
 #### This step loads the raw data into the database. The -nd argument specifies the name of the database, and -id specifies the operation to be performed (in this case, uploading data to the database).
 
-#### STEP - 5 : Run the ETL script to transform the data by running 
+#### STEP - :five: : Run the ETL script to transform the data by running 
 
 ```python src\tools\etl_script_final.py```
 
 #### This step performs the ETL (Extract-Transform-Load) process to transform the raw data into a format suitable for modeling.
 
-#### STEP - 6 : Create the cleaned database by running 
+#### STEP - :six: : Create the cleaned database by running 
 
 ```python src\tools\database_final.py -cd True -nd CleanedDatabaseName``` 
 
 #### This step creates a new database with the cleaned data.
 
-#### STEP - 7 : Load the cleaned data into the database by running 
+#### STEP - :seven: : Load the cleaned data into the database by running 
 
 ```python src\tools\database_final.py -nd CleanedDatabaseName -id cleaned-upload-to-database``` 
 
 #### This step loads the cleaned data into the database.
 
-#### STEP - 8 : Run SQL queries from Python Script on the database by running 
+#### STEP - :eight: : Run SQL queries from Python Script on the database by running 
 
 ```python src\tools\sql_python.py``` 
 
 #### This step allows you to run SQL queries on the database and retrieve specific data based on your needs.
 
-#### STEP - 9 : Run SQL queries on the database by running the code 
+#### STEP - :nine: : Run SQL queries on the database by running the code 
 
 ```python main.py -t sql_python``` 
 
 #### This will execute the "main.py" script with the "sql_python" task parameter, triggering the SQL query and export process resulting output file (df) should be uploaded to the specified S3 bucket after the script completes execution.
 
-#### STEP - 10 : Run the final modeling script by running the code 
+#### STEP - :keycap_ten: : Run the final modeling script by running the code 
 
 ```python main.py -t modeling_final``` 
 
