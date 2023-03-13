@@ -48,15 +48,15 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 #### This step is necessary to activate the Conda environment that contains all the required [libraries and dependencies](https://github.com/soopertramp/DS-End-to-End-Project#requirements) for the project.
 
-#### STEP - 3 : Create the database by running 
+#### STEP - 3 : Create the database by running the below code 
 
-```python src\tools\database_final.py -cd True -nd supermarket``` 
+```python src\tools\database_final.py -cd True -nd YourDatabaseName``` 
 
-#### This step creates the database with the specified name ("supermarket" in this case). The -cd argument specifies whether to create or drop the database, and -nd specifies the name of the database.
+#### This step creates the database with the specified name. The -cd argument specifies whether to create or drop the database, and -nd specifies the name of the database.
 
 #### STEP - 4 : Load the data into the database by running 
 
-```python src\tools\database_final.py -nd supermarket -id upload-to-database```
+```python src\tools\database_final.py -nd YourDatabaseName -id upload-to-database```
 
 #### This step loads the raw data into the database. The -nd argument specifies the name of the database, and -id specifies the operation to be performed (in this case, uploading data to the database).
 
@@ -68,33 +68,33 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 #### STEP - 6 : Create the cleaned database by running 
 
-```python src\tools\database_final.py -cd True -nd cleaned_supermarket``` 
+```python src\tools\database_final.py -cd True -nd CleanedDatabaseName``` 
 
-#### This step creates a new database with the cleaned data. The name of the database is "cleaned_supermarket" in this case.
+#### This step creates a new database with the cleaned data.
 
 #### STEP - 7 : Load the cleaned data into the database by running 
 
-```python src\tools\database_final.py -nd cleaned_supermarket -id cleaned-upload-to-database``` 
+```python src\tools\database_final.py -nd CleanedDatabaseName -id cleaned-upload-to-database``` 
 
 #### This step loads the cleaned data into the database.
 
-#### STEP - 8 : Run SQL queries on the database by running 
+#### STEP - 8 : Run SQL queries from Python Script on the database by running 
 
 ```python src\tools\sql_python.py``` 
 
 #### This step allows you to run SQL queries on the database and retrieve specific data based on your needs.
 
-#### STEP - 9 : Run SQL queries on the database by running 
+#### STEP - 9 : Run SQL queries on the database by running the code 
 
 ```python main.py -t sql_python``` 
 
-#### This will execute the "main.py" script with the "sql_python" task parameter, triggering the SQL query and export process resulting output file should be uploaded to the specified S3 bucket after the script completes execution.
+#### This will execute the "main.py" script with the "sql_python" task parameter, triggering the SQL query and export process resulting output file (df) should be uploaded to the specified S3 bucket after the script completes execution.
 
-#### STEP - 10 : Run the final modeling script by running 
+#### STEP - 10 : Run the final modeling script by running the code 
 
 ```python main.py -t modeling_final``` 
 
-#### This step runs the final modeling script to build a predictive model based on the cleaned data. The -t argument specifies the type of script to run, and "modeling_final" is the name of the script.
+#### This step runs the final modeling script to build a predictive model based on the cleaned data. The -t argument specifies the type of script to run, and "modeling_final" is the name of the script and uploads the Predictions to a Google Sheet
 
 ## Conclusion
 
