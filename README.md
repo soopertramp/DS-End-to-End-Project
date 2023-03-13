@@ -2,7 +2,7 @@
 
 ## :pushpin: Project Architecture
 
-https://github.com/soopertramp/DS-End-to-End-Project/blob/main/End2End_architecture.jpg
+![project_architecture](https://github.com/soopertramp/DS-End-to-End-Project/blob/main/End2End_architecture.jpg)
 
 ## :wave: Introduction
 
