@@ -96,12 +96,12 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 #### This step runs the final modeling script to build a predictive model based on the cleaned data. The -t argument specifies the type of script to run, and "modeling_final" is the name of the script and uploads the Predictions to a Google Sheet
 
-## Conclusion
+## :end: Conclusion
 
 This project showcases the ability to handle real-world data and solve a problem using data science techniques. The project can be used as a reference for building similar projects in the future. Feel free to use the code and make modifications as per your requirements and don't forget to give credit.
 
-## Created and Contributed by
+## :bulb: Created and Contributed by
 
-[Pradeepchandra Reddy S C](https://www.linkedin.com/in/pradeepchandra-reddy-s-c/)
+:man_technologist: [Pradeepchandra Reddy S C](https://www.linkedin.com/in/pradeepchandra-reddy-s-c/)
 
-[Data To Production (Mitul Patel Msc - Mentor)](https://www.linkedin.com/in/mitul-patel2393/)
+:man_technologist: [Data To Production (Mitul Patel Msc - Mentor)](https://www.linkedin.com/in/mitul-patel2393/)
