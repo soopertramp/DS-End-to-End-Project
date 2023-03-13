@@ -1,7 +1,9 @@
+import os
 from pathlib import Path
 
 import mysql.connector as mysql
 import pandas as pd
+from dotenv import load_dotenv
 
 from src.tools.utils import authenticate_s3, upload_to_s3
 
@@ -22,11 +24,13 @@ def run_sql_script(database: str, script_path: Path) -> pd.DataFrame:
         pd.DataFrame: Result of the SQL script as a pandas DataFrame.
 
     """
+    env_path = Path('.env')
+    load_dotenv(env_path)
     # Create a connection to the database
     db = mysql.connect(
         host='localhost',
         user='root',
-        password='password',
+        password=os.getenv('password'),
         database=database
     )
 

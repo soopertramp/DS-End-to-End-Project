@@ -38,12 +38,14 @@ def connect_to_mysql(host: str, user: str, password: str) -> Tuple[mysql.connect
     -------
         Exception: If an error occurs while connecting to the MySQL server.
     """
+    env_path = Path('.env')
+    load_dotenv(env_path)
     try:
         # connect to MySQL
         mydb = mysql.connect(
             host = host,
             user = user,
-            password = password
+            password = os.getenv('password')
         )
         print("Connected to MySQL successfully!")
         

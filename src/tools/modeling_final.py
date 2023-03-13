@@ -70,11 +70,13 @@ def generate_forecasts(df: pd.DataFrame, cities: List[str], product_lines: List[
     
     return forecasts_df
 
-# Get unique cities and product lines from the data
-cities = data['city'].unique()
-product_lines = data['product_line'].unique()
-
-# Generate sales forecasts for all combinations of cities and product lines
-predictions = generate_forecasts(data, cities, product_lines)
+def process():
+    # Get unique cities and product lines from the data
+    cities = data['city'].unique()
+    product_lines = data['product_line'].unique()
+    
+    # Generate sales forecasts for all combinations of cities and product lines
+    predictions = generate_forecasts(data, cities, product_lines)
+    return predictions
 
 upload = upload_to_google_sheet('1d9qOwKAaOVdkyuubjCycIcPO_H7ASbUkk_tN75JF2go', predictions, 'Sheet1')
