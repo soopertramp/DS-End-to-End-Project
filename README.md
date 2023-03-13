@@ -36,7 +36,11 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 ## User Guide
 
-#### STEP - 1 : Navigate to the project directory in the terminal by running `cd " YOUR FOLDER LOCATION "` : This step is necessary to ensure that you are in the correct directory where the project files are located.
+#### STEP - 1 : Navigate to the project directory in the terminal by running 
+
+```cd " YOUR FOLDER LOCATION "``` 
+
+#### : This step is necessary to ensure that you are in the correct directory where the project files are located.
 
 #### STEP - 2 : Activate the project environment by running `conda activate End2End` : This step is necessary to activate the Conda environment that contains all the required libraries and dependencies for the project.
 
