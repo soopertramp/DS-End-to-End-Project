@@ -26,12 +26,11 @@ sql_python:
     - export:
         host: s3
         bucket: end2enddsproject
-        filename: process_
+        filename: supermarket_cleaned
 
-predictions:
+modeling_final:
   export:
     - export:
       host: gsheet
       spread_sheet_id: 1d9qOwKAaOVdkyuubjCycIcPO_H7ASbUkk_tN75JF2go
-      df: predictions
       worksheet_name: Sheet1
