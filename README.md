@@ -46,7 +46,7 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 ```conda activate End2End``` 
 
-#### This step is necessary to activate the Conda environment that contains all the required libraries and dependencies for the project.
+#### This step is necessary to activate the Conda environment that contains all the required (libraries and dependencies)[https://github.com/soopertramp/DS-End-to-End-Project#requirements] for the project.
 
 #### STEP - 3 : Create the database by running 
 
