@@ -16,7 +16,7 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 ## Requirements
 
 | library | Description |
-|  :---:  | ----------- |
+|---------| ----------- |
 |mysql-connector-python| A library that provides connectivity to MySQL databases.|
 |matplotlib| A plotting library for creating visualizations in Python|
 |pandas| A library for data manipulation and analysis.|
