@@ -36,24 +36,23 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 ## User Guide
 
-#### STEP - 1 : Navigate to the project directory in the terminal by running `cd Desktop\github_local\End2End\DS-End-to-End-Project`
-: This step is necessary to ensure that you are in the correct directory where the project files are located.
+#### STEP - 1 : Navigate to the project directory in the terminal by running `cd " YOUR FOLDER LOCATION "` : This step is necessary to ensure that you are in the correct directory where the project files are located.
 
-Activate the project environment by running conda activate End2End: This step is necessary to activate the Conda environment that contains all the required libraries and dependencies for the project.
+#### STEP - 2 : Activate the project environment by running `conda activate End2End` : This step is necessary to activate the Conda environment that contains all the required libraries and dependencies for the project.
 
-Create the database by running python src\tools\database_final.py -cd True -nd supermarket: This step creates the database with the specified name ("supermarket" in this case). The -cd argument specifies whether to create or drop the database, and -nd specifies the name of the database.
+#### STEP - 3 : Create the database by running `python src\tools\database_final.py -cd True -nd supermarket` : This step creates the database with the specified name ("supermarket" in this case). The -cd argument specifies whether to create or drop the database, and -nd specifies the name of the database.
 
-Load the data into the database by running python src\tools\database_final.py -nd supermarket -id upload-to-database: This step loads the raw data into the database. The -nd argument specifies the name of the database, and -id specifies the operation to be performed (in this case, uploading data to the database).
+#### STEP - 4 : Load the data into the database by running `python src\tools\database_final.py -nd supermarket -id upload-to-database` : This step loads the raw data into the database. The -nd argument specifies the name of the database, and -id specifies the operation to be performed (in this case, uploading data to the database).
 
-Run the ETL script to transform the data by running python src\tools\etl_script_final.py: This step performs the ETL (Extract-Transform-Load) process to transform the raw data into a format suitable for modeling.
+#### STEP - 5 : Run the ETL script to transform the data by running `python src\tools\etl_script_final.py` : This step performs the ETL (Extract-Transform-Load) process to transform the raw data into a format suitable for modeling.
 
-Create the cleaned database by running python src\tools\database_final.py -cd True -nd cleaned_supermarket: This step creates a new database with the cleaned data. The name of the database is "cleaned_supermarket" in this case.
+#### STEP - 6 : Create the cleaned database by running `python src\tools\database_final.py -cd True -nd cleaned_supermarket` : This step creates a new database with the cleaned data. The name of the database is "cleaned_supermarket" in this case.
 
-Load the cleaned data into the database by running python src\tools\database_final.py -nd cleaned_supermarket -id cleaned-upload-to-database: This step loads the cleaned data into the database.
+#### STEP - 7 : Load the cleaned data into the database by running `python src\tools\database_final.py -nd cleaned_supermarket -id cleaned-upload-to-database` : This step loads the cleaned data into the database.
 
-Run SQL queries on the database by running python src\tools\sql_python.py: This step allows you to run SQL queries on the database and retrieve specific data based on your needs.
+#### STEP - 8 : Run SQL queries on the database by running `python src\tools\sql_python.py` : This step allows you to run SQL queries on the database and retrieve specific data based on your needs.
 
-Run the final modeling script by running python main.py -t modeling_final: This step runs the final modeling script to build a predictive model based on the cleaned data. The -t argument specifies the type of script to run, and "modeling_final" is the name of the script.
+#### STEP - 9 : Run the final modeling script by running `python main.py -t modeling_final` : This step runs the final modeling script to build a predictive model based on the cleaned data. The -t argument specifies the type of script to run, and "modeling_final" is the name of the script.
 
 ## Conclusion
 
