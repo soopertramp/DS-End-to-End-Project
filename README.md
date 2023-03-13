@@ -1,6 +1,6 @@
 # :man_technologist: Data Science End2End Project
 
-[embed]https://github.com/soopertramp/DS-End-to-End-Project/blob/main/End2End.pdf[/embed]
+https://github.com/soopertramp/DS-End-to-End-Project/blob/main/End2End.pdf
 
 ## :wave: Introduction
 
