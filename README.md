@@ -84,7 +84,13 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 
 #### This step allows you to run SQL queries on the database and retrieve specific data based on your needs.
 
-#### STEP - 9 : Run the final modeling script by running 
+#### STEP - 9 : Run SQL queries on the database by running 
+
+```python main.py -t sql_python``` 
+
+#### This will execute the "main.py" script with the "sql_python" task parameter, triggering the SQL query and export process resulting output file should be uploaded to the specified S3 bucket after the script completes execution.
+
+#### STEP - 10 : Run the final modeling script by running 
 
 ```python main.py -t modeling_final``` 
 
