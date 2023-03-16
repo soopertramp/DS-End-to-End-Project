@@ -33,10 +33,10 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 `boto3`| A library for interacting with AWS services using Python.
 `googleapiclient.discovery`| A library for discovering and using Google APIs.
 
-## Getting Started
+## :rocket: Getting Started
 To get started with this project, you'll need to clone the repository and make changes to the code. Here's how:
 
-#### Cloning the Repository
+#### :link:  Cloning the Repository
 
 - Go to the repository's page on Github and click the "Code" button.
 - Select "HTTPS" or "SSH" as the clone method, depending on your preference.
@@ -48,7 +48,7 @@ For example, if the repository's URL is "https://github.com/user/repo.git" and y
 
 ``` git clone https://github.com/user/repo.git ~/Desktop/my-project ```
 
-## Giving Credit
+## :handshake: Giving Credit
 
 If you make changes to the code, it's important to give credit to the original project's author. You can do this by adding a note or comment to your code, or by including the original author's name and a link to the project in your documentation.
 
@@ -58,7 +58,7 @@ For example, if you add a new feature to the code, you could include a comment l
 
 ``` // Link to original project: [link to original project] ```
 
-## Working with the Code
+## :computer: :memo: :thinking: Working with the Code
 
 Once you have cloned the repository, you can start working with the code. Here are some tips to get you started:
 
@@ -128,7 +128,7 @@ Once you have cloned the repository, you can start working with the code. Here a
 
 #### This step runs the final modeling script to build a predictive model based on the cleaned data. The -t argument specifies the type of script to run, and "modeling_final" is the name of the script and uploads the Predictions to a Google Sheet
 
-## Contributing
+## :handshake::thought_balloon: Contributing
 
 If you would like to contribute to this project, please create a pull request on Github: [Pull Request](https://github.com/soopertramp/DS-End-to-End-Project/compare)
 
