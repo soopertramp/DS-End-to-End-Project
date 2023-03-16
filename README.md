@@ -110,19 +110,13 @@ Once you have cloned the repository, you can start working with the code. Here a
 
 #### This step loads the cleaned data into the database.
 
-#### STEP - :eight: : Run SQL queries from Python Script on the database by running 
-
-```python src\tools\sql_python.py``` 
-
-#### This step allows you to run SQL queries on the database and retrieve specific data based on your needs.
-
-#### STEP - :nine: : Run main.py with task parameter 
+#### STEP - :eight: : Run main.py with task parameter 
 
 ```python main.py -t sql_python``` 
 
 #### This will execute the "main.py" script with the "sql_python" task parameter, triggering the SQL query and export process resulting output file (df) should be uploaded to the specified S3 bucket after the script completes execution.
 
-#### STEP - :keycap_ten: : Run the final modeling script by running the code 
+#### STEP - :nine: : Run the final modeling script by running the code 
 
 ```python main.py -t modeling_final``` 
 
