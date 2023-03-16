@@ -54,9 +54,9 @@ If you make changes to the code, it's important to give credit to the original p
 
 For example, if you add a new feature to the code, you could include a comment like this:
 
-``` // New feature added by [your name]. Original code by [original author name].
+``` // New feature added by [your name]. Original code by [original author name].```
 
-// Link to original project: [link to original project] ```
+``` // Link to original project: [link to original project] ```
 
 ## Working with the Code
 
