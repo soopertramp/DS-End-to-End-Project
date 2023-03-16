@@ -33,6 +33,39 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 `boto3`| A library for interacting with AWS services using Python.
 `googleapiclient.discovery`| A library for discovering and using Google APIs.
 
+## Getting Started
+To get started with this project, you'll need to clone the repository and make changes to the code. Here's how:
+
+#### Cloning the Repository
+
+- Go to the repository's page on Github and click the "Code" button.
+- Select "HTTPS" or "SSH" as the clone method, depending on your preference.
+- Copy the URL provided.
+- Open a terminal or command prompt and navigate to the directory where you want to store the repository on your local machine.
+- Type "git clone" followed by the URL you copied in step 3.
+
+For example, if the repository's URL is "https://github.com/user/repo.git" and you want to store the repository in a folder called "my-project" on your desktop, you would type the following command:
+
+``` git clone https://github.com/user/repo.git ~/Desktop/my-project ```
+
+## Giving Credit
+
+If you make changes to the code, it's important to give credit to the original project's author. You can do this by adding a note or comment to your code, or by including the original author's name and a link to the project in your documentation.
+
+For example, if you add a new feature to the code, you could include a comment like this:
+
+``` // New feature added by [your name]. Original code by [original author name].
+
+// Link to original project: [link to original project] ```
+
+## Working with the Code
+
+Once you have cloned the repository, you can start working with the code. Here are some tips to get you started:
+
+- Read the [User Guide]() and code comments to understand how the code works.
+- Make changes to the code as needed, testing your changes to ensure they work correctly.
+- If you want to contribute your changes back to the original project, create a pull request on Github. Be sure to include a detailed description of your changes and why they are important or necessary.
+
 ## :open_book: User Guide
 
 #### STEP - :one: : Navigate to the project directory in the terminal by running 
@@ -94,6 +127,10 @@ The project is focused on forecasting quantity for a supermarket. The data used 
 ```python main.py -t modeling_final``` 
 
 #### This step runs the final modeling script to build a predictive model based on the cleaned data. The -t argument specifies the type of script to run, and "modeling_final" is the name of the script and uploads the Predictions to a Google Sheet
+
+## Contributing
+
+If you would like to contribute to this project, please create a pull request on Github: [Pull Request](https://github.com/soopertramp/DS-End-to-End-Project/compare)
 
 ## :end: Conclusion
 
