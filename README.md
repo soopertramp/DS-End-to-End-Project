@@ -130,7 +130,7 @@ Once you have cloned the repository, you can start working with the code. Here a
 
 ## :handshake::thought_balloon: Contributing
 
-If you would like to contribute to this project, please create a pull request on Github: [Pull Request](https://github.com/soopertramp/DS-End-to-End-Project/compare)
+If you would like to contribute to this project, please create a pull request on an other branch so that we don't mess up main code: [Pull Request](https://github.com/soopertramp/DS-End-to-End-Project/compare)
 
 ## :end: Conclusion
 
