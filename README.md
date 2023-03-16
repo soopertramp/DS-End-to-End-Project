@@ -62,7 +62,7 @@ For example, if you add a new feature to the code, you could include a comment l
 
 Once you have cloned the repository, you can start working with the code. Here are some tips to get you started:
 
-- Read the [User Guide]() and code comments to understand how the code works.
+- Read the [User Guide](https://github.com/soopertramp/DS-End-to-End-Project#open_book-user-guide) and code comments to understand how the code works.
 - Make changes to the code as needed, testing your changes to ensure they work correctly.
 - If you want to contribute your changes back to the original project, create a pull request on Github. Be sure to include a detailed description of your changes and why they are important or necessary.
 
