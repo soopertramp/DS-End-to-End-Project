@@ -2,7 +2,7 @@
 
 ## :pushpin: Project Architecture
 
-<img src="https://github.com/soopertramp/DS-End-to-End-Project/blob/main/End2End_architecture.jpg" height="300" width="1000" />
+<img src="https://github.com/soopertramp/inventory_forecasting_end2end/blob/main/assets/End2End_architecture.jpg" height="300" width="1000" />
 
 ## :wave: Introduction
 
