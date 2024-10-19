@@ -14,7 +14,7 @@ parser = argparse.ArgumentParser(description='Connects to a MySQL database and c
 parser.add_argument('-cd', '--create_db', type=bool, default=False, help='Whether to create the database (True or False)')
 parser.add_argument('-nd', '--name_the_db', type=str, help='The name of the database', required=True)
 parser.add_argument('-id', '--task_id', type=str, help='The tasks defined in the config files.')
-args = parser.parse_args()
+args = parser.parse_args() 
 
 # load tasks from config --------------------------------------------------------------
 with open("./config/config.yaml", 'r') as f:
