@@ -19,7 +19,7 @@ args = parser.parse_args()
 # load tasks from config --------------------------------------------------------------
 with open("./config/config.yaml", 'r') as f:
     config = yaml.load(f, Loader=yaml.FullLoader)
-
+ 
 #read mysql password
 env_path = Path('.env')
 load_dotenv(env_path)
