@@ -57,7 +57,7 @@ def process() -> pd.DataFrame:
     --------
         pd.DataFrame: A pandas DataFrame containing the merged data.
     """
-    database = 'cleaned_supermarket'
+    database = 'cleaned_supermarket_sales'
     script_path = Path('src/tools/merge_query.sql')
     df = run_sql_script(database, script_path)
     return df
