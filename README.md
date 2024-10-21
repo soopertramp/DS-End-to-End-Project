@@ -1,4 +1,4 @@
-# :man_technologist: Data Science End2End Project
+# :man_technologist: Inventory Forecasting
 
 ## :pushpin: Project Architecture
 
